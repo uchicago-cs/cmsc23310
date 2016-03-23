@@ -1,4 +1,0 @@
-Homeworks
----------
-
-Coming soon.
