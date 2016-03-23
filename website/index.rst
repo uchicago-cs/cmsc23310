@@ -1,12 +1,6 @@
 CMSC 23310 - Advanced Distributed Systems
 =========================================
 
-
-Announcements
-~~~~~~~~~~~~~
-
-No announcements so far!
-
 Course Staff
 ~~~~~~~~~~~~
 
@@ -16,11 +10,14 @@ Course Staff
 
 *Office*: Ryerson 165-A
 
-*Office hours*: After class and by appointment.
+*Office hours*: By appointment.
 
-**TAs**
+**TA**
 
-TBD
+Stephen Rosen (sirosen@uchicago.edu)
+
+*Office hours*: TBD
+
 
 Course Description
 ~~~~~~~~~~~~~~~~~~
@@ -35,7 +32,7 @@ For more details, please see the `syllabus <syllabus.html>`_.
 
    syllabus.rst
    calendar.rst
-   homeworks.rst
+   pa.rst
    project.rst
 
 

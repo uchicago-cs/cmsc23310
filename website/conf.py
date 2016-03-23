@@ -132,7 +132,7 @@ html_theme_options = {
     'navbar_links': [
         ("Syllabus", "syllabus"),
         ("Calendar and Reading List", "calendar"),
-        ("Homeworks", "homeworks"),
+        ("Programming Assignments", "pa"),
         ("Project", "project"),
     ],
 
