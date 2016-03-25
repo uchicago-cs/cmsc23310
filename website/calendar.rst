@@ -3,24 +3,40 @@ Spring 2016 Calendar and Reading List
 
 **Note: This reading list is still tentative, and subject to change!**
 
+Make sure you don't miss the :ref:`additional-reading` at the bottom of this page.
+
 Week 1
 ~~~~~~
 
-No papers to read this week
+No required reading for this week. We will be covering basic terminology and
+concepts in distributed systems.
+
+**Suggested Reading**
+
+Note: Some of these readings go into topics that we will cover later in the quarter.
+As such, you may not get that much out of reading these references at the start
+of the quarter. Instead, they can be good reference material to re-read later on
+and see how everything fits together.
+
+- `Distributed Systems for Fun and Profit <http://book.mixu.net/distsys/>`_
+- `Notes on Distributed Systems for Young Bloods <https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/>`_
+- `Distributed systems theory for the distributed systems engineer <http://the-paper-trail.org/blog/distributed-systems-theory-for-the-distributed-systems-engineer/>`_
+- Samuel C. Kendall, Jim Waldo, Ann Wollrath, and Geoff Wyant. 1994. 
+  `A Note on Distributed Computing <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.7628&rep=rep1&type=pdf>`_. 
+  Technical Report. Sun Microsystems, Inc., Mountain View, CA, USA.
+- `Fallacies of Distributed Computing Explained <https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf>`_. Arnon Rotem-Gal-Oz.
 
 Week 2 - Distributed Time
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Required reading for Monday, April 4
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Monday, April 4**
 
 -  Leslie Lamport. `Time, Clocks, and the Ordering of Events in a
    Distributed
    System <http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf>`__.
    Commun.ACM, 21(7):558–565, July 1978
 
-Required reading for Wednesday, April 6
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Wednesday, April 6**
 
 -  C. J. Fidge.\ `Timestamps in Message-Passing Systems that Preserve
    the Partial
@@ -32,8 +48,7 @@ Required reading for Wednesday, April 6
    In Parallel and Distributed Algorithms, pages 215–226. North-Holland,
    1989
 
-Suggested reading
-^^^^^^^^^^^^^^^^^
+**Suggested papers**
 
 -  Parameswaran Ramanathan, Kang G. Shin, and Ricky W. Butler.
    `Fault-tolerant Clock Synchronization in Distributed
@@ -47,29 +62,30 @@ Suggested reading
 Week 3 - Distributed Consensus I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Required reading for Monday, April 11
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Monday, April 11**
 
 -  Leslie Lamport, Robert Shostak, and Marshall Pease. `The Byzantine
    Generals
    Problem <http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf>`__.
    ACM Trans. Program. Lang. Syst., 4(3):382–401, July 1982
 
-Required reading for Wednesday, April 13
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  Butler W. Lampson and Howard E. Sturgis. `Crash Recovery in a
-   Distributed Data Storage
-   System <http://research.microsoft.com/en-us/um/people/blampson/21-CrashRecovery/Abstract.html>`__,
-   1979
+**Required reading for Wednesday, April 13**
+   
+-  D. Skeen. `A Quorum-Based Commit Protocol <https://ecommons.cornell.edu/handle/1813/6323>`_. Technical Report 82-483. Department of
+   Computer Science, Cornell University. February 1982.   
 -  D. Skeen and M. Stonebraker. `A Formal Model of Crash Recovery in a
    Distributed
    System <http://www.inf.fu-berlin.de/lehre/SS10/DBS-TA/Reader/3PCSkeenStonebr.pdf>`__.
    IEEE Trans. Softw. Eng., 9(3):219–228, May 1983
 
-Suggested reading
-^^^^^^^^^^^^^^^^^
+**Suggested papers**
 
+-  J. Gray. `Notes on Database Operating Systems <http://research.microsoft.com/en-us/um/people/gray/papers/DBOS.pdf>`_. Operating Systems, an Advanced Course, 
+   Bayer et. al. eds., Lecture notes in Computer Science 60, Springer-Verlag, 1978, pp. 393-481. 
+-  Butler W. Lampson and Howard E. Sturgis. `Crash Recovery in a
+   Distributed Data Storage
+   System <http://research.microsoft.com/en-us/um/people/blampson/21-CrashRecovery/Abstract.html>`__,
+   1979
 -  M. Pease, R. Shostak, and L. Lamport. `Reaching Agreement in the
    Presence of
    Faults <http://research.microsoft.com/en-us/um/people/lamport/pubs/reaching.pdf>`__.
@@ -87,11 +103,15 @@ Suggested reading
    Recovery <http://www.itu.dk/stud/speciale/bepjea/xwebtex/litt/practical-byzantine-fault-tolerance-and-proactive-recovery.pdf>`__.
    ACM Trans. Comput. Syst., 20(4):398–461, November 2002
 
+**Other suggested reading**
+
+-  `Consensus Protocols: Two-Phase Commit <http://the-paper-trail.org/blog/consensus-protocols-two-phase-commit/>`_. Henry Robinson. The Paper Trail.
+-  `Consensus Protocols: Three-phase Commit <http://the-paper-trail.org/blog/consensus-protocols-three-phase-commit/>`_. Henry Robinson. The Paper Trail.
+
 Week 4 - Limits of Distributed Systems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Required reading for Monday, April 18
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Monday, April 18**
 
 -  Michael J. Fischer, Nancy A. Lynch, and Michael S. Paterson.
    `Impossibility of distributed consensus with one faulty
@@ -102,28 +122,39 @@ Required reading for Monday, April 18
    Consensus <http://www.geocities.com/stockmeyer@sbcglobal.net/dds.pdf>`__.
    J. ACM, 34(1):77–97, January 1987
 
-Required reading for Wednesday, April 20
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Wednesday, April 20**
 
 -  Seth Gilbert and Nancy Lynch. `Brewer's Conjecture and the
    Feasibility of Consistent, Available, Partition-Tolerant Web
    Services <http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf>`__.
    SIGACT News, 33(2):51–59, June 2002
 
-Suggested reading
-^^^^^^^^^^^^^^^^^
+**Suggested papers**
 
+-  Cynthia Dwork, Nancy Lynch, and Larry Stockmeyer. 
+   `Consensus in the presence of partial synchrony <http://theory.lcs.mit.edu/tds/papers/Lynch/jacm88.pdf>`_. J. ACM 35, 2 (April 1988), 288-323.
 -  N. Lynch. `A Hundred Impossibility Proofs for Distributed
    Computing <http://groups.csail.mit.edu/tds/papers/Lynch/podc89.pdf>`__.
    In Proceedings of the eighth annual ACM Symposium on Principles of
    distributed computing, PODC ’89, pages 1–28, New York, NY, USA, 1989.
    ACM
+   
+**Other suggested reading**
+
+-  `A Brief Tour of FLP Impossibility <http://the-paper-trail.org/blog/a-brief-tour-of-flp-impossibility/>`_. Henry Robinson. The Paper Trail.
+-  `Papers We Love - Impossibility of Consensus with One Faulty Process <http://www.slideshare.net/HenryRobinson/pwl-nonotes>`_. Henry Robinson.
+-  `FLP and CAP aren't the same thing <http://the-paper-trail.org/blog/flp-and-cap-arent-the-same-thing/>`_. Henry Robinson. The Paper Trail.
+-  `The CAP FAQ <http://henryr.github.io/cap-faq/>`_. Henry Robinson.
+-  `You Do It Too: Forfeiting Network Partition Tolerance in Distributed Systems <http://blog.thislongrun.com/2015/07/Forfeit-Partition-Tolerance-Distributed-System-CAP-Theorem.html>`_.
+   Nicholas Liochon.
+-  `Comments on "You Do it Too" <https://aphyr.com/posts/325-comments-on-you-do-it-too>`_. Aphyr.
+-  `The Theorem That Will Not Go Away <http://the-paper-trail.org/blog/the-theorem-that-will-not-go-away/>`_. Henry Robinson. The Paper Trail.
+
 
 Week 5 - Paxos
 ~~~~~~~~~~~~~~
 
-Required reading for Monday, April 25 and Wednesday April 27
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Monday, April 25 and Wednesday April 27**
 
 -  Leslie Lamport. `The Part-Time
    Parliament <http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf>`__.
@@ -132,11 +163,15 @@ Required reading for Monday, April 25 and Wednesday April 27
    Simple <http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf>`__.
    ACM SIGACT News, 32(4):18–25, December 2001
 
+**Other suggested reading**
+
+-  `Consensus Protocols: Paxos <http://the-paper-trail.org/blog/consensus-protocols-paxos/>`_. Henry Robinson. The Paper Trail.
+
+
 Week 6 - Distributed Consensus II
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Required reading for Monday, May 2
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Monday, May 2**
 
 -  Mike Burrows. `The Chubby Lock Service for Loosely-Coupled
    Distributed
@@ -151,17 +186,19 @@ Required reading for Monday, May 2
    of distributed computing, PODC ’07, pages 398–407, New York, NY, USA,
    2007. ACM
 
-Required reading for Wednesday, May 4
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Wednesday, May 4**
 
 -  Diego Ongaro and John Ousterhout. `In search of an understandable
    consensus algorithm <http://ramcloud.stanford.edu/raft.pdf>`__, 2014
 
+**Other suggested reading**
+
+- `Raft <https://raft.github.io/>`_ website.
+
 Week 7 - Distributed Hash Tables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Required reading for Monday, May 9
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Monday, May 9**
 
 -  Ion Stoica, Robert Morris, David Karger, M. Frans Kaashoek, and Hari
    Balakrishnan. `Chord: A scalable peer-to-peer lookup service for
@@ -176,8 +213,7 @@ Required reading for Monday, May 9
    Distributed Systems Platforms Heidelberg, Middleware ’01, pages
    329–350, London, UK, UK, 2001. Springer-Verlag
 
-Required reading for Wednesday, May 11
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Wednesday, May 11**
 
 -  Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan
    Kakulapati, Avinash Lakshman, Alex Pilchin, Swaminathan
@@ -194,8 +230,7 @@ Week 8 - Distributed Data I
 *Note: Instructor will be out of town this week, and the discussions will be led by a
 guest instructor to be determined.*
 
-Required reading for Monday, May 16
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Monday, May 16**
 
 -  Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung. `The Google File
    System <http://static.googleusercontent.com/media/research.google.com/en/us/archive/gfs-sosp2003.pdf>`__.
@@ -205,8 +240,7 @@ Required reading for Monday, May 16
    Clusters <http://research.google.com/archive/mapreduce-osdi04.pdf>`__.
    Commun. ACM, 51(1):107–113, January 2008
 
-Required reading for Wednesday, May 18
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Wednesday, May 18**
 
 -  James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes,
    Christopher Frost, J. J. Furman, Sanjay Ghemawat, Andrey Gubarev,
@@ -220,8 +254,7 @@ Required reading for Wednesday, May 18
    Design and Implementation, OSDI’12, pages 251–264, Berkeley, CA, USA,
    2012. USENIX Association
 
-Suggested Reading
-^^^^^^^^^^^^^^^^^
+**Suggested papers**
 
 -  Avinash Lakshman and Prashant Malik. `Cassandra: A Decentralized
    Structured Storage
@@ -245,8 +278,7 @@ Week 10 - Review
 
 *Note: There will be no class on May 30 (Memorial Day)*
 
-Required reading for Wednesday, June 1
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Required reading for Wednesday, June 1**
 
 -  Edsger W. Dijkstra. `Self-stabilizing systems in spite of distributed
    control <http://courses.csail.mit.edu/6.852/05/papers/p643-Dijkstra.pdf>`__.
@@ -256,3 +288,21 @@ Required reading for Wednesday, June 1
    Concurrency <http://research.microsoft.com/en-us/um/people/lamport/pubs/solved-and-unsolved.pdf>`__.
    SIGOPS Oper. Syst. Rev., 19(4):34–44, October 1985
 
+
+.. _additional-reading:
+
+Additional Suggested Reading
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`Aphyr's blog <https://aphyr.com/posts/>`_ is a great source of easy-to-read posts on a number of distributed systems topics.
+The blog also includes a lot of posts on Aphyr's projects, so here are some links to specific
+posts on distributed systems:
+  
+- `The trouble with timestamps <https://aphyr.com/posts/299-the-trouble-with-timestamps>`_
+- `The network is reliable <https://aphyr.com/posts/288-the-network-is-reliable>`_
+- `Strong consistency models <https://aphyr.com/posts/313-strong-consistency-models>`_
+
+Henry Robinson's `The Paper Trail <http://the-paper-trail.org/>`_ blog has a plethora of posts
+related to many of the papers we discuss in this class.
+
+Survey of important papers on distributed consensus: `A brief history of Consensus, 2PC and Transaction Commit. <http://betathoughts.blogspot.com/2007/06/brief-history-of-consensus-2pc-and.html>`_
