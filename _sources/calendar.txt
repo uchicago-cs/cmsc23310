@@ -128,6 +128,8 @@ Week 4 - Limits of Distributed Systems
    Feasibility of Consistent, Available, Partition-Tolerant Web
    Services <http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf>`__.
    SIGACT News, 33(2):51–59, June 2002
+-  E. Brewer, `CAP twelve years later: How the "rules" have changed <http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed>`_. 
+   in Computer, vol. 45, no. 2, pp. 23-29, Feb. 2012.
 
 **Suggested papers**
 
@@ -145,9 +147,8 @@ Week 4 - Limits of Distributed Systems
 -  `Papers We Love - Impossibility of Consensus with One Faulty Process <http://www.slideshare.net/HenryRobinson/pwl-nonotes>`_. Henry Robinson.
 -  `FLP and CAP aren't the same thing <http://the-paper-trail.org/blog/flp-and-cap-arent-the-same-thing/>`_. Henry Robinson. The Paper Trail.
 -  `The CAP FAQ <http://henryr.github.io/cap-faq/>`_. Henry Robinson.
--  `You Do It Too: Forfeiting Network Partition Tolerance in Distributed Systems <http://blog.thislongrun.com/2015/07/Forfeit-Partition-Tolerance-Distributed-System-CAP-Theorem.html>`_.
-   Nicholas Liochon.
--  `Comments on "You Do it Too" <https://aphyr.com/posts/325-comments-on-you-do-it-too>`_. Aphyr.
+-  `You Can't Sacrifice Partition Tolerance <https://codahale.com/you-cant-sacrifice-partition-tolerance/>`_. Coda Hale.
+-  `Clarifications on the CAP Theorem and Data-Related Errors <https://voltdb.com/blog/clarifications-cap-theorem-and-data-related-errors>`_. Michael Stonebraker.
 -  `The Theorem That Will Not Go Away <http://the-paper-trail.org/blog/the-theorem-that-will-not-go-away/>`_. Henry Robinson. The Paper Trail.
 
 
@@ -256,6 +257,9 @@ guest instructor to be determined.*
 
 **Suggested papers**
 
+-  Daniel Ford, Francois Labelle, Florentina Popovici, Murray Stokely, Van-Anh Truong, Luiz Barroso, Carrie Grimes, Sean Quinlan. 
+   `Availability in Globally Distributed Storage Systems <http://static.usenix.org/events/osdi10/tech/full_papers/Ford.pdf>`__.
+   Proceedings of the 9th USENIX Symposium on Operating Systems Design and Implementation, USENIX (2010)
 -  Avinash Lakshman and Prashant Malik. `Cassandra: A Decentralized
    Structured Storage
    System <http://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf>`__.
@@ -306,3 +310,6 @@ Henry Robinson's `The Paper Trail <http://the-paper-trail.org/>`_ blog has a ple
 related to many of the papers we discuss in this class.
 
 Survey of important papers on distributed consensus: `A brief history of Consensus, 2PC and Transaction Commit. <http://betathoughts.blogspot.com/2007/06/brief-history-of-consensus-2pc-and.html>`_
+
+`Notes on Theory of Distributed Systems <http://www.cs.yale.edu/homes/aspnes/classes/465/notes.pdf>`_
+James Aspnes, Yale University.
