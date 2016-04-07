@@ -115,18 +115,18 @@ Week 4 - Limits of Distributed Systems
 
 -  Michael J. Fischer, Nancy A. Lynch, and Michael S. Paterson.
    `Impossibility of distributed consensus with one faulty
-   process <http://discolab.rutgers.edu/classes/cs519-old/papers/p374-fischer.pdf>`__.
+   process <https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf>`__.
    J. ACM, 32(2):374–382, April 1985
 -  Danny Dolev, Cynthia Dwork, and Larry Stockmeyer. `On the Minimal
    Synchronism Needed for Distributed
-   Consensus <http://www.geocities.com/stockmeyer@sbcglobal.net/dds.pdf>`__.
+   Consensus <http://groups.csail.mit.edu/tds/papers/Stockmeyer/DolevDS83-focs.pdf>`__.
    J. ACM, 34(1):77–97, January 1987
 
 **Required reading for Wednesday, April 20**
 
 -  Seth Gilbert and Nancy Lynch. `Brewer's Conjecture and the
    Feasibility of Consistent, Available, Partition-Tolerant Web
-   Services <http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf>`__.
+   Services <https://pdfs.semanticscholar.org/24ce/ce61e2128780072bc58f90b8ba47f624bc27.pdf>`__.
    SIGACT News, 33(2):51–59, June 2002
 -  E. Brewer, `CAP twelve years later: How the "rules" have changed <http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed>`_. 
    in Computer, vol. 45, no. 2, pp. 23-29, Feb. 2012.
