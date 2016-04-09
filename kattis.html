@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+<title>Using Kattis &mdash; CMSC 23310 - Advanced Distributed Systems</title>
+
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.4/united/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/chiweb.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="CMSC 23310 - Advanced Distributed Systems" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          CMSC 23310 - Advanced Distributed Systems</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="calendar.html">Calendar and Reading List</a></li>
+                <li><a href="pa.html">Programming Assignments</a></li>
+                <li><a href="project.html">Project</a></li>
+            
+            
+              
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+<div class="row">
+    <div class="col-md-12">
+        <ul class="breadcrumb">
+          <li><a href="index.html">CMSC 23310 - Advanced Distributed Systems</a></li>
+            <li class="active">Using Kattis</li>
+        </ul>
+    </div>
+</div>
+
+    <div class="col-md-12 content">
+      
+  <div class="section" id="using-kattis">
+<h1>Using Kattis<a class="headerlink" href="#using-kattis" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://open.kattis.com/">Kattis</a> is a website that allows students to submit
+solutions to programming problems, and have them evaluated automatically by
+running a series of test cases on the submitted solutions.</p>
+<p>You will be able to test your solution to the programming assignments on Kattis.
+However, please take into account:</p>
+<ul class="simple">
+<li>Kattis is <strong>not</strong> how you will submit your work for grading. You must submit
+your programming assignments using <a class="reference external" href="chisubmit.html">chisubmit</a>.</li>
+<li>You can test your work on Kattis as many times as you want. Making multiple
+incorrect submissions on Kattis will <em>not</em> affect your grade in a programming
+assignment.</li>
+<li>When asking for help on an assignment, it is much easier if you point us
+to your last submission on Kattis, since that allows us to see exactly what
+test cases you are passing and failing.</li>
+</ul>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>Before you can submit code through Kattis, you need to complete the following steps:</p>
+<ol class="arabic simple">
+<li>Go to the <a class="reference external" href="https://open.kattis.com/register">Open Kattis registration page</a> and
+create an account <strong>with your UChicago e-mail</strong>. If you do not use your UChicago e-mail,
+we will not be able to find your submissions on Kattis.</li>
+<li>Log into the UChicago Kattis site using the account you just created: <a class="reference external" href="https://uchicago.kattis.com/login">https://uchicago.kattis.com/login</a></li>
+<li>Go to the <a class="reference external" href="https://uchicago.kattis.com/courses/CMSC23310/Spring-2016">CMSC 23310 Spring 2016 page on Kattis</a>,
+and click on the link that says &#8220;I am a student taking this course and I want to register for it on Kattis.&#8221;</li>
+<li>Go to your User Settings (click on the user icon on the top-right corner of the Kattis
+page, and then select &#8220;Settings&#8221;) and change the following:<ul>
+<li>By default, the information on what problems you have solved is shown to everyone in the class
+(you can see what this looks like by clicking on the <a class="reference external" href="https://uchicago.kattis.com/submissions">Queue</a>
+link on the top of the site). If you would prefer not to show this information,
+check the &#8220;Anonymous mode&#8221; option.</li>
+<li>Set your preferred time zone to &#8220;America/Chicago&#8221;</li>
+<li>Set your default language to your language of choice.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="familiarizing-yourself-with-kattis">
+<h2>Familiarizing yourself with Kattis<a class="headerlink" href="#familiarizing-yourself-with-kattis" title="Permalink to this headline">¶</a></h2>
+<p>Before you attempt any of the problems we give you, you should familiarize yourself
+with Kattis to ensure you know how it works. We suggest you start by solving the
+<a class="reference external" href="https://uchicago.kattis.com/problems/hello">Hello World</a> problem. This problem
+has a very simple solution: you just need to write a program that prints out
+a &#8220;secret message&#8221;, which happens to be exactly this text:</p>
+<div class="highlight-python"><div class="highlight"><pre>Hello World!
+</pre></div>
+</div>
+<p>The way you submit a problem is by clicking on the green &#8220;Submit&#8221; button that appears
+on the right sidebar. This
+will take you to a page where you can either upload a file, or switch to an editor
+where you can write the code directly on your browser. Make sure that you select
+the correct programming language before you submit.</p>
+<p>After you&#8217;ve submitted the code, Kattis will &#8220;judge&#8221; it, and will send you an
+e-mail notification with the result. If you solved the problem correctly, you
+will get an &#8220;Accepted&#8221; judgement.</p>
+<p>You can also check the status of all your
+submissions by clicking on the user icon on the top-right corner of the Kattis
+page, and then clicking on &#8220;My Profile&#8221;. This will show a list of all your submissions.
+Take into account that this list does not update automatically; if a submission
+shows up as pending (either &#8220;Compiling&#8221; or &#8220;Running&#8221;), you need to reload the page
+to see its latest status.</p>
+<p>You can also get more details on any submission by clicking on the
+6-7 digit number on the left column (this is number is the <em>submission identifier</em>).</p>
+<p>Next, try to make an <em>incorrect</em> submission. Submit a program that prints
+this:</p>
+<div class="highlight-python"><div class="highlight"><pre>Hello Lamport!
+</pre></div>
+</div>
+<p>The submission should be judged as &#8220;Wrong Answer&#8221;.</p>
+</div>
+<div class="section" id="solving-the-programming-assignments">
+<h2>Solving the programming assignments<a class="headerlink" href="#solving-the-programming-assignments" title="Permalink to this headline">¶</a></h2>
+<p>As you&#8217;ll see in the programming assignments, you must write code that receives some
+input in a well-specified format, and must produce output in a well-specified way.</p>
+<p>All input is done via <strong>standard input</strong>. All output is done via <strong>standard output</strong>.</p>
+<p><strong>You should not read or write from any files</strong></p>
+<p>The problems will include some sample data that you can use to test your solution. However,
+Kattis will run your solution with additional test cases that are known only to the
+instructors.</p>
+<p>So, if you get a &#8220;Wrong Answer&#8221;, make sure you look at the details of that submission
+(by going to the list of submissions and clicking on the submission identifier). This
+will show you how many of the instructors&#8217; test cases you are passing.</p>
+<p>Kattis may return judgements other than &#8220;Accepted&#8221; and &#8220;Wrong Answer&#8221;. You can see
+a list of all the possible Kattis judgements here: <a class="reference external" href="https://uchicago.kattis.com/help/judgements">https://uchicago.kattis.com/help/judgements</a></p>
+</div>
+<div class="section" id="testing-your-solution-before-submitting-to-kattis">
+<h2>Testing your solution before submitting to Kattis<a class="headerlink" href="#testing-your-solution-before-submitting-to-kattis" title="Permalink to this headline">¶</a></h2>
+<p>Before submitting a solution to Kattis, you may want to run your solution on your own
+machine to make sure there are no major issues with your code, such as syntax errors or
+small mistakes that will makes your code return a Wrong Answer even with the sample input.</p>
+<p>Suppose you write a solution in Python in a file called <code class="docutils literal"><span class="pre">problem.py</span></code>. To test your
+solution, just run the program:</p>
+<div class="highlight-python"><div class="highlight"><pre>python problem.py
+</pre></div>
+</div>
+<p>Since input is done through standard input, your program should now wait for input. You
+should just type (or copy-paste) some valid input (e.g., from the provided sample input)
+and then press Control-D to indicate the end of input. Alternatively, you can save the
+sample input to a file, and use input redirection to feed that file into the program&#8217;s standard input:</p>
+<div class="highlight-python"><div class="highlight"><pre>pythong problem.py &lt; sample.in
+</pre></div>
+</div>
+<p>In either case, your program will run with the provided input. If the output matches the sample output provided
+in the Kattis problem statement, it means your solution works for that input. At this point, your solution
+is probably safe to submit to Kattis.</p>
+<p>If, on the other hand, your program crashes or the output that doesn&#8217;t match the expected output, you may want
+to debug your solution a bit more before you submit it on Kattis. Otherwise, you will have to debug it using the
+(sometimes limited) feedback that Kattis provides.</p>
+</div>
+<div class="section" id="asking-for-help">
+<h2>Asking for help<a class="headerlink" href="#asking-for-help" title="Permalink to this headline">¶</a></h2>
+<p>If you keep getting a &#8220;Wrong Answer&#8221; on a problem, and you can&#8217;t figure out what
+the issue is, it will be really helpful if you can tell us the submission identifier of your
+latest submission. That way, we can take a look at the code you submitted and
+see why it isn&#8217;t working.</p>
+</div>
+<div class="section" id="open-kattis">
+<h2>Open Kattis<a class="headerlink" href="#open-kattis" title="Permalink to this headline">¶</a></h2>
+<p>Many of you were probably not familiar with Kattis before this class. Besides providing
+sites to university courses, Kattis also hosts a treasure trove of
+interesting programming problems that can be good preparation for job interviews or just
+for your own edification. You can access their complete collection of problems on their
+<a class="reference external" href="https://open.kattis.com/">Open Kattis</a> site.</p>
+<p>For avoidance of doubt: we are pointing you to Open Kattis just because some of your
+may find it of interest. Solving problems on Open Kattis will have no bearing on your
+grade for this course.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2012-2016, The University of Chicago.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

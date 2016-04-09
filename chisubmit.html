@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+<title>Using chisubmit &mdash; CMSC 23310 - Advanced Distributed Systems</title>
+
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.4/united/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/chiweb.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="CMSC 23310 - Advanced Distributed Systems" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          CMSC 23310 - Advanced Distributed Systems</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="calendar.html">Calendar and Reading List</a></li>
+                <li><a href="pa.html">Programming Assignments</a></li>
+                <li><a href="project.html">Project</a></li>
+            
+            
+              
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+<div class="row">
+    <div class="col-md-12">
+        <ul class="breadcrumb">
+          <li><a href="index.html">CMSC 23310 - Advanced Distributed Systems</a></li>
+            <li class="active">Using chisubmit</li>
+        </ul>
+    </div>
+</div>
+
+    <div class="col-md-12 content">
+      
+  <div class="section" id="using-chisubmit">
+<h1>Using chisubmit<a class="headerlink" href="#using-chisubmit" title="Permalink to this headline">¶</a></h1>
+<p>We use a command-line tool called <code class="docutils literal"><span class="pre">chisubmit</span></code> to manage student repositories and grading in this course. chisubmit will
+also be used to handle your registration for the final project. This page contains instructions on some of the common
+tasks you&#8217;ll have to do with chisubmit.</p>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>First, choose an empty directory in your CS home directory on which to do your CMSC 23310 work on. Inside that directory, run the following command on a CS Linux machine (or by SSH&#8217;ing into linux.cs.uchicago.edu):</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit init
+</pre></div>
+</div>
+<p>When prompted for your &#8220;chisubmit username&#8221; and &#8220;chisubmit password&#8221;, just use your CNetID and password. Once you have entered your username and password, you will be shown a list of courses you belong to in <code class="docutils literal"><span class="pre">chisubmit</span></code>. If CMSC 23310 does not appear in them, you registration information may not have been added to <code class="docutils literal"><span class="pre">chisubmit</span></code> (if you registered for the class recently, please try again in 24 hours; if not, please contact your instructor).</p>
+<p>After <code class="docutils literal"><span class="pre">chisubmit</span> <span class="pre">init</span></code> runs successfully, you will be able to run <code class="docutils literal"><span class="pre">chisubmit</span></code> commands from inside that directory.</p>
+</div>
+<div class="section" id="registering-for-a-programming-assignment">
+<h2>Registering for a programming assignment<a class="headerlink" href="#registering-for-a-programming-assignment" title="Permalink to this headline">¶</a></h2>
+<p>To be able to submit a programming assignment, you will first need to register for it. For example, to register
+for the first programming assignment:</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment register pa1
+</pre></div>
+</div>
+</div>
+<div class="section" id="registering-for-the-final-project">
+<h2>Registering for the final project<a class="headerlink" href="#registering-for-the-final-project" title="Permalink to this headline">¶</a></h2>
+<p>Instructions on how to register for the final project will be posted once the final project is posted.</p>
+</div>
+<div class="section" id="making-a-submission">
+<h2>Making a submission<a class="headerlink" href="#making-a-submission" title="Permalink to this headline">¶</a></h2>
+<p>Once you have registered for a programming assignment or for the project, you will be able to make submissions for it.</p>
+<div class="section" id="selecting-the-commit-you-want-to-submit">
+<h3>Selecting the commit you want to submit<a class="headerlink" href="#selecting-the-commit-you-want-to-submit" title="Permalink to this headline">¶</a></h3>
+<p>To submit an assignment for grading, you first need to select the specific commit you want us to grade. Commits in git are identified by a SHA-1 hash, and look something like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+</pre></div>
+</div>
+<p>You can see the list of commits in your repository by running the following:</p>
+<div class="highlight-python"><div class="highlight"><pre>git log
+</pre></div>
+</div>
+<p>Or, if you simply want to get the SHA-1 hash of the latest commit in your <cite>master</cite> branch, you can just run this:</p>
+<div class="highlight-python"><div class="highlight"><pre>git rev-parse master
+</pre></div>
+</div>
+</div>
+<div class="section" id="making-the-submission">
+<h3>Making the submission<a class="headerlink" href="#making-the-submission" title="Permalink to this headline">¶</a></h3>
+<p>Once you&#8217;ve identified the commit you want to submit, you need to run the following <strong>BEFORE THE DEADLINE</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment submit &lt;cnet-or-team&gt; &lt;assignment-id&gt; &lt;commit-sha&gt;
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&lt;cnet-or-team&gt;</span></code> is either your CNetID (if you are submitting a programming assignment) or your team identifier (if you
+are submitting the final project). Your team identifier will be the same as your repository name (typically your CNetIDs separated by hyphens).</li>
+<li><code class="docutils literal"><span class="pre">&lt;assignment-id&gt;</span></code> is the assignment identifier. Your instructor will tell you what identifier to use, but you can also see the list of possible assignment ids by running <cite>chisubmit student assignment list</cite>.</li>
+<li><code class="docutils literal"><span class="pre">&lt;commit-sha&gt;</span></code> is the SHA-1 hash of the commit you want to submit.</li>
+</ul>
+<p>For example, the command could look something like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment submit borja pa1 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+</pre></div>
+</div>
+<p>You will be given an opportunity to verify the details of the submission before you actually submit your code. For example, the above command would print something like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>You are going to make a submission for pa1 (Programming Assignment 1).
+The commit you are submitting is the following:
+
+      Commit: 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+        Date: 2015-01-07 08:55:31
+     Message: Ready for submission
+      Author: Borja Sotomayor &lt;borja@cs.uchicago.edu&gt;
+
+PLEASE VERIFY THIS IS THE EXACT COMMIT YOU WANT TO SUBMIT
+
+Your team currently has 0 extensions
+
+You are going to use 0 extensions on this submission.
+
+You will have 0 extensions left after this submission.
+
+Are you sure you want to continue? (y/n):
+</pre></div>
+</div>
+<p>Before you type &#8220;y&#8221;, <strong>take a moment to ensure that this commit is the one you actually want to submit</strong>. If the commit message and date shown by chisubmit don&#8217;t look right, then you should double-check whether you were able to successfully commit and push your code.</p>
+<p>Finally, remember that the above has to be run <em>before the deadline</em>. If you fail to do so, it doesn&#8217;t matter if your code was pushed to the GitLab server before the deadline. For your code to be accepted for grading, you must also run the <cite>chisubmit</cite> submission command before the deadline. The <cite>chisubmit</cite> system will mercilessly stop accepting submissions once the deadline has passed.</p>
+</div>
+<div class="section" id="verifying-that-your-submission-went-through">
+<h3>Verifying that your submission went through<a class="headerlink" href="#verifying-that-your-submission-went-through" title="Permalink to this headline">¶</a></h3>
+<p>The following command will show you the projects you are registered for, and whether you have made a submission for them:</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student team show CNETID_OR_TEAM_ID
+</pre></div>
+</div>
+<p>If you have not submitted an assignment, you will see something like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>ASSIGNMENTS
+-----------
+ID: pa1
+Name: Programming Assignment 1
+Deadline: 2015-10-07 01:07:15+00:00
+NOT SUBMITTED
+</pre></div>
+</div>
+<p>If you have submitted the assignment correctly, you will see something like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>ASSIGNMENTS
+-----------
+ID: pa1
+Name: Programming Assignment 1
+Deadline: 2015-10-07 01:07:15+00:00
+Last submitted at: 2015-10-07 00:07:20.017641+00:00
+Commit SHA: 2e5969ce281b88bcb3743dc81539623124e63f41
+Extensions used: 0
+</pre></div>
+</div>
+<p>If you want to be extra sure, you can log into the <a class="reference external" href="https://mit.cs.uchicago.edu">GitLab server</a>, then click on your repository  on the right side of the page, then click on &#8220;Commits&#8221; on the right side of the page. You will see the list of commits that are on the server (this is what the graders will see). On the right side of the page, you will see the first eight characters of each commit&#8217;s SHA; find the one that was shown by <code class="docutils literal"><span class="pre">chisubmit</span> <span class="pre">student</span> <span class="pre">team</span> <span class="pre">show</span> <span class="pre">command</span></code>, and verify that it is, indeed the version of the code that you want the graders to grade.</p>
+</div>
+</div>
+<div class="section" id="amending-a-submission">
+<h2>Amending a submission<a class="headerlink" href="#amending-a-submission" title="Permalink to this headline">¶</a></h2>
+<p>If you make a submission, and realize you want to change something in your submission, all you have to do is make the changes, commit them, and run <code class="docutils literal"><span class="pre">chisubmit</span> <span class="pre">student</span> <span class="pre">assignment</span> <span class="pre">submit</span></code> with the new commit and with the <code class="docutils literal"><span class="pre">--force</span></code> option. For example:</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment submit borja pa1 3bc2ab13a504393e12c48a3b8a56510a901329fd --force
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">chisubmit</span></code> will warn you that there is an existing submission, and will ask you to confirm that you want to make a new one:</p>
+<div class="highlight-python"><div class="highlight"><pre>WARNING: You have already submitted assignment pa1 and you
+are about to overwrite the previous submission of the following commit:
+
+      Commit: 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+        Date: 2015-01-07 08:55:31
+     Message: Ready for submission
+      Author: Borja Sotomayor &lt;borja@cs.uchicago.edu&gt;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+THE ABOVE SUBMISSION FOR pa1 (Programming Assignment 1) WILL BE CANCELLED.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+If you continue, your submission for pa1 (Programming Assignment 1)
+will now point to the following commit:
+
+      Commit: 3bc2ab13a504393e12c48a3b8a56510a901329fd
+        Date: 2015-01-07 08:59:31
+     Message: Ok, really ready for submission now
+      Author: Borja Sotomayor &lt;borja@cs.uchicago.edu&gt;
+
+PLEASE VERIFY THIS IS THE EXACT COMMIT YOU WANT TO SUBMIT
+
+Your team currently has 0 extensions
+
+You used 0 extensions in your previous submission of this assignment.
+and you are going to use 0 additional extensions now.
+
+You will have 0 extensions left after this submission.
+
+Are you sure you want to continue? (y/n):  y
+</pre></div>
+</div>
+<p>Like your first submission, you can only re-submit <em>before the deadline</em>. Once the deadline passes, you cannot modify your submission.</p>
+<div class="section" id="making-a-safety-submission">
+<h3>Making a safety submission<a class="headerlink" href="#making-a-safety-submission" title="Permalink to this headline">¶</a></h3>
+<p>Take into account that chisubmit allows you to make multiple submissions before the deadline. A good strategy is to always make a &#8220;safety submission&#8221; well ahead of the deadline. That way, if you end up missing the deadline, there is already a submission in the system with most of your work on it.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2012-2016, The University of Chicago.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
