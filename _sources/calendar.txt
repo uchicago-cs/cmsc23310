@@ -100,7 +100,7 @@ Week 3 - Distributed Consensus I
    ACM Comput. Surv., 22(4):299–319, December 1990
 -  Miguel Castro and Barbara Liskov. `Practical Byzantine Fault
    Tolerance and Proactive
-   Recovery <http://www.itu.dk/stud/speciale/bepjea/xwebtex/litt/practical-byzantine-fault-tolerance-and-proactive-recovery.pdf>`__.
+   Recovery <http://research.microsoft.com/en-us/um/people/mcastro/publications/p398-castro-bft-tocs.pdf>`__.
    ACM Trans. Comput. Syst., 20(4):398–461, November 2002
 
 **Other suggested reading**
