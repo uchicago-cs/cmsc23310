@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+<title>Programming Assignment 2: Paxos &mdash; CMSC 23310 - Advanced Distributed Systems</title>
+
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/united/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/chiweb.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="CMSC 23310 - Advanced Distributed Systems" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          CMSC 23310 - Advanced Distributed Systems</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../syllabus.html">Syllabus</a></li>
+                <li><a href="../calendar.html">Calendar and Reading List</a></li>
+                <li><a href="../pa.html">Programming Assignments</a></li>
+                <li><a href="../project.html">Project</a></li>
+            
+            
+              
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+<div class="row">
+    <div class="col-md-12">
+        <ul class="breadcrumb">
+          <li><a href="../index.html">CMSC 23310 - Advanced Distributed Systems</a></li>
+            <li class="active">Programming Assignment 2: Paxos</li>
+        </ul>
+    </div>
+</div>
+
+    <div class="col-md-12 content">
+      
+  <div class="section" id="programming-assignment-2-paxos">
+<h1>Programming Assignment 2: Paxos<a class="headerlink" href="#programming-assignment-2-paxos" title="Permalink to this headline">¶</a></h1>
+<p><strong>Due:</strong> Thursday, May 12st &#64; 8pm</p>
+<p>In this homework, you will be implementing a single-instance (or &#8220;Single Synod&#8221;) version of the Paxos consensus algorithm. Instead of running the algorithm across multiple machines, you will instead simulate a distributed system composed of multiple machines connected with a basic (and deterministic) network.</p>
+<p>You are allowed to use any programming language you want and, before the deadline, you will be able to test your solution using <a class="reference external" href="https://open.kattis.com/">Kattis</a>, a website that allows students to submit solutions to programming problems, and have them evaluated automatically by running a series of test cases on the submitted solutions. Please note that, while you are allowed to use any language, Kattis itself only supports a limited number of languages; if you do not use one of their supported languages, you will not be able to test your solution on Kattis (but you will still be able to submit your code for grading).</p>
+<p>While this programming assignment is not yet available on Kattis, you can read the problem statement <a class="reference download internal" href="../_downloads/paxos.pdf"><code class="xref download docutils literal"><span class="pre">here</span></code></a>. We also provide detailed descriptions of <a class="reference download internal" href="../_downloads/paxos_sample1.pdf"><code class="xref download docutils literal"><span class="pre">Sample</span> <span class="pre">Input</span> <span class="pre">1</span></code></a> and <a class="reference download internal" href="../_downloads/paxos_sample2.pdf"><code class="xref download docutils literal"><span class="pre">Sample</span> <span class="pre">Input</span> <span class="pre">2</span></code></a>.</p>
+<p>The points for this homework are divided as follows:</p>
+<ul class="simple">
+<li>35 points: Implementing the &#8220;Simulate&#8221; function.</li>
+<li>35 points: Implementing a single-instance version of the Paxos algorithm that works in the absence of failures.</li>
+<li>30 points: Making your implementation work in the presence of failures.</li>
+</ul>
+<p>We recommend you follow the specification of the algorithm presented in <em>Paxos Made Simple</em>. Take into account that the bulk of the Paxos algorithm will be contained in your implementation of the &#8220;Deliver-Message&#8221; function. Our reference implementation is about 400 lines of Python, of which only 100 relate directly to the Paxos algorithm (the rest are the scaffolding to run the simulation).</p>
+<p>You are not provided with any starter code; you must implement your solution from scratch following the provided problem specification.</p>
+<p>For more instructions on how to use Kattis, please see our <a class="reference external" href="../kattis.html">Using Kattis</a> page.</p>
+<p>You will each be provided with an individual Git repository on the <a class="reference external" href="https://mit.cs.uchicago.edu">department&#8217;s GitLab server</a> to work on your programing assignments. Place your work for this programming assignment in a top-level <code class="docutils literal"><span class="pre">pa2</span></code> directory. Besides including your code in this directory, you must also include a <code class="docutils literal"><span class="pre">README</span></code> file with precise instructions on how to compile and run your code on a CS machine.</p>
+<p>You must submit your work using <a class="reference external" href="../chisubmit.html">chisubmit</a>. The assignment identifier you should use is <code class="docutils literal"><span class="pre">pa2</span></code>.</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2012-2016, The University of Chicago.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
