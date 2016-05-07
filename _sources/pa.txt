@@ -5,5 +5,3 @@ Programming Assignments
   Due: Thursday, April 21st @ 8pm
 * **Programming Assignment 2**: `Paxos <pa2/>`_
   Due: Thursday, May 12th @ 8pm
-* **Programming Assignment 3**: TBD (Distributed Hash Tables or Raft)
-  Due: TBD

@@ -31,7 +31,33 @@ for the first programming assignment::
 Registering for the final project
 ---------------------------------
 
-Instructions on how to register for the final project will be posted once the final project is posted.
+If you will be working individually on the project, then you must run this::
+
+    chisubmit student assignment register project
+
+You should use the individual repository that was created for you at the start of the quarter.
+
+However, most (if not all) of you will be working in teams for the final project. If you will be working in a team, you will need to register for the project before a joint repository is created for you. If you are working in a pair, then each student must run this::
+
+    chisubmit student assignment register project --partner MY_PARTNER_CNETID
+
+where ``MY_PARTNER_CNETID`` should be replaced with the CNetID of the partner of the student who is running the above command.
+
+If you are working in teams of three, then you much each run this::
+
+    chisubmit student assignment register project --partner MY_PARTNER_CNETID --partner MY_OTHER_PARTNER_CNETID
+
+You will be assigned a team name which will be composed of your CNetIDs. You can see the list of teams you are in with this command::
+
+    chisubmit student team list
+
+And you can use this command to check the status of your team (and, in particular, whether every partner has completed their part of the registration)::
+
+    chisubmit student team show TEAMNAME
+
+(where TEAMNAME should be replaced by your team name)
+
+Once all team members have registered for the project, a GitLab repository will be created for you. Please note that there is usually a lag of 10 minutes between completing your registration and having your repository created.
 
 
 Making a submission

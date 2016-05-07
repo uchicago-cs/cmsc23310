@@ -117,7 +117,30 @@ for the first programming assignment:</p>
 </div>
 <div class="section" id="registering-for-the-final-project">
 <h2>Registering for the final project<a class="headerlink" href="#registering-for-the-final-project" title="Permalink to this headline">¶</a></h2>
-<p>Instructions on how to register for the final project will be posted once the final project is posted.</p>
+<p>If you will be working individually on the project, then you must run this:</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment register project
+</pre></div>
+</div>
+<p>You should use the individual repository that was created for you at the start of the quarter.</p>
+<p>However, most (if not all) of you will be working in teams for the final project. If you will be working in a team, you will need to register for the project before a joint repository is created for you. If you are working in a pair, then each student must run this:</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment register project --partner MY_PARTNER_CNETID
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">MY_PARTNER_CNETID</span></code> should be replaced with the CNetID of the partner of the student who is running the above command.</p>
+<p>If you are working in teams of three, then you much each run this:</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment register project --partner MY_PARTNER_CNETID --partner MY_OTHER_PARTNER_CNETID
+</pre></div>
+</div>
+<p>You will be assigned a team name which will be composed of your CNetIDs. You can see the list of teams you are in with this command:</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student team list
+</pre></div>
+</div>
+<p>And you can use this command to check the status of your team (and, in particular, whether every partner has completed their part of the registration):</p>
+<div class="highlight-python"><div class="highlight"><pre>chisubmit student team show TEAMNAME
+</pre></div>
+</div>
+<p>(where TEAMNAME should be replaced by your team name)</p>
+<p>Once all team members have registered for the project, a GitLab repository will be created for you. Please note that there is usually a lag of 10 minutes between completing your registration and having your repository created.</p>
 </div>
 <div class="section" id="making-a-submission">
 <h2>Making a submission<a class="headerlink" href="#making-a-submission" title="Permalink to this headline">¶</a></h2>
