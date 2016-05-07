@@ -1,0 +1,204 @@
+===============
+Using chisubmit
+===============
+
+We use a command-line tool called ``chisubmit`` to manage student repositories and grading in this course. chisubmit will
+also be used to handle your registration for the final project. This page contains instructions on some of the common
+tasks you'll have to do with chisubmit.
+
+
+Setup
+-----
+
+First, choose an empty directory in your CS home directory on which to do your CMSC 23310 work on. Inside that directory, run the following command on a CS Linux machine (or by SSH'ing into linux.cs.uchicago.edu):: 
+
+    chisubmit init
+
+When prompted for your "chisubmit username" and "chisubmit password", just use your CNetID and password. Once you have entered your username and password, you will be shown a list of courses you belong to in ``chisubmit``. If CMSC 23310 does not appear in them, you registration information may not have been added to ``chisubmit`` (if you registered for the class recently, please try again in 24 hours; if not, please contact your instructor).
+
+After ``chisubmit init`` runs successfully, you will be able to run ``chisubmit`` commands from inside that directory.
+
+
+Registering for a programming assignment
+----------------------------------------
+
+To be able to submit a programming assignment, you will first need to register for it. For example, to register
+for the first programming assignment::
+
+    chisubmit student assignment register pa1
+
+
+Registering for the final project
+---------------------------------
+
+If you will be working individually on the project, then you must run this::
+
+    chisubmit student assignment register project
+
+You should use the individual repository that was created for you at the start of the quarter.
+
+However, most (if not all) of you will be working in teams for the final project. If you will be working in a team, you will need to register for the project before a joint repository is created for you. If you are working in a pair, then each student must run this::
+
+    chisubmit student assignment register project --partner MY_PARTNER_CNETID
+
+where ``MY_PARTNER_CNETID`` should be replaced with the CNetID of the partner of the student who is running the above command.
+
+If you are working in teams of three, then you much each run this::
+
+    chisubmit student assignment register project --partner MY_PARTNER_CNETID --partner MY_OTHER_PARTNER_CNETID
+
+You will be assigned a team name which will be composed of your CNetIDs. You can see the list of teams you are in with this command::
+
+    chisubmit student team list
+
+And you can use this command to check the status of your team (and, in particular, whether every partner has completed their part of the registration)::
+
+    chisubmit student team show TEAMNAME
+
+(where TEAMNAME should be replaced by your team name)
+
+Once all team members have registered for the project, a GitLab repository will be created for you. Please note that there is usually a lag of 10 minutes between completing your registration and having your repository created.
+
+
+Making a submission
+-------------------
+
+Once you have registered for a programming assignment or for the project, you will be able to make submissions for it.
+
+
+Selecting the commit you want to submit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To submit an assignment for grading, you first need to select the specific commit you want us to grade. Commits in git are identified by a SHA-1 hash, and look something like this::
+
+    4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+
+You can see the list of commits in your repository by running the following::
+
+    git log
+
+Or, if you simply want to get the SHA-1 hash of the latest commit in your `master` branch, you can just run this::
+
+    git rev-parse master
+
+Making the submission
+~~~~~~~~~~~~~~~~~~~~~
+
+Once you've identified the commit you want to submit, you need to run the following **BEFORE THE DEADLINE**::
+
+    chisubmit student assignment submit <cnet-or-team> <assignment-id> <commit-sha>
+
+Where:
+
+* ``<cnet-or-team>`` is either your CNetID (if you are submitting a programming assignment) or your team identifier (if you
+  are submitting the final project). Your team identifier will be the same as your repository name (typically your CNetIDs separated by hyphens).
+* ``<assignment-id>`` is the assignment identifier. Your instructor will tell you what identifier to use, but you can also see the list of possible assignment ids by running `chisubmit student assignment list`.
+* ``<commit-sha>`` is the SHA-1 hash of the commit you want to submit.
+
+For example, the command could look something like this::
+
+    chisubmit student assignment submit borja pa1 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+
+You will be given an opportunity to verify the details of the submission before you actually submit your code. For example, the above command would print something like this::
+
+    You are going to make a submission for pa1 (Programming Assignment 1).
+    The commit you are submitting is the following:
+    
+          Commit: 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+            Date: 2015-01-07 08:55:31
+         Message: Ready for submission
+          Author: Borja Sotomayor <borja@cs.uchicago.edu>
+    
+    PLEASE VERIFY THIS IS THE EXACT COMMIT YOU WANT TO SUBMIT
+    
+    Your team currently has 0 extensions
+    
+    You are going to use 0 extensions on this submission.
+    
+    You will have 0 extensions left after this submission.
+
+    Are you sure you want to continue? (y/n):
+
+Before you type "y", **take a moment to ensure that this commit is the one you actually want to submit**. If the commit message and date shown by chisubmit don't look right, then you should double-check whether you were able to successfully commit and push your code.
+
+Finally, remember that the above has to be run *before the deadline*. If you fail to do so, it doesn't matter if your code was pushed to the GitLab server before the deadline. For your code to be accepted for grading, you must also run the `chisubmit` submission command before the deadline. The `chisubmit` system will mercilessly stop accepting submissions once the deadline has passed.
+
+
+Verifying that your submission went through
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The following command will show you the projects you are registered for, and whether you have made a submission for them::
+ 
+   chisubmit student team show CNETID_OR_TEAM_ID
+   
+If you have not submitted an assignment, you will see something like this::
+ 
+    ASSIGNMENTS
+    -----------
+    ID: pa1
+    Name: Programming Assignment 1
+    Deadline: 2015-10-07 01:07:15+00:00
+    NOT SUBMITTED
+     
+If you have submitted the assignment correctly, you will see something like this::
+ 
+    ASSIGNMENTS
+    -----------
+    ID: pa1
+    Name: Programming Assignment 1
+    Deadline: 2015-10-07 01:07:15+00:00
+    Last submitted at: 2015-10-07 00:07:20.017641+00:00
+    Commit SHA: 2e5969ce281b88bcb3743dc81539623124e63f41
+    Extensions used: 0
+
+If you want to be extra sure, you can log into the `GitLab server <https://mit.cs.uchicago.edu>`_, then click on your repository  on the right side of the page, then click on "Commits" on the right side of the page. You will see the list of commits that are on the server (this is what the graders will see). On the right side of the page, you will see the first eight characters of each commit's SHA; find the one that was shown by ``chisubmit student team show command``, and verify that it is, indeed the version of the code that you want the graders to grade.
+
+Amending a submission
+---------------------
+
+If you make a submission, and realize you want to change something in your submission, all you have to do is make the changes, commit them, and run ``chisubmit student assignment submit`` with the new commit and with the ``--force`` option. For example::
+
+    chisubmit student assignment submit borja pa1 3bc2ab13a504393e12c48a3b8a56510a901329fd --force
+
+``chisubmit`` will warn you that there is an existing submission, and will ask you to confirm that you want to make a new one::
+
+    WARNING: You have already submitted assignment pa1 and you
+    are about to overwrite the previous submission of the following commit:
+    
+          Commit: 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+            Date: 2015-01-07 08:55:31
+         Message: Ready for submission
+          Author: Borja Sotomayor <borja@cs.uchicago.edu>
+    
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    THE ABOVE SUBMISSION FOR pa1 (Programming Assignment 1) WILL BE CANCELLED.
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
+    If you continue, your submission for pa1 (Programming Assignment 1)
+    will now point to the following commit:
+    
+          Commit: 3bc2ab13a504393e12c48a3b8a56510a901329fd
+            Date: 2015-01-07 08:59:31
+         Message: Ok, really ready for submission now
+          Author: Borja Sotomayor <borja@cs.uchicago.edu>
+    
+    PLEASE VERIFY THIS IS THE EXACT COMMIT YOU WANT TO SUBMIT
+    
+    Your team currently has 0 extensions
+
+    You used 0 extensions in your previous submission of this assignment.
+    and you are going to use 0 additional extensions now.
+    
+    You will have 0 extensions left after this submission.
+    
+    Are you sure you want to continue? (y/n):  y
+
+Like your first submission, you can only re-submit *before the deadline*. Once the deadline passes, you cannot modify your submission.
+
+
+Making a safety submission
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Take into account that chisubmit allows you to make multiple submissions before the deadline. A good strategy is to always make a "safety submission" well ahead of the deadline. That way, if you end up missing the deadline, there is already a submission in the system with most of your work on it.
+
+

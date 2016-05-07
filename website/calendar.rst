@@ -1,8 +1,6 @@
 Spring 2016 Calendar and Reading List
 -------------------------------------
 
-**Note: This reading list is still tentative, and subject to change!**
-
 Make sure you don't miss the :ref:`additional-reading` at the bottom of this page.
 
 Week 1
@@ -100,7 +98,7 @@ Week 3 - Distributed Consensus I
    ACM Comput. Surv., 22(4):299–319, December 1990
 -  Miguel Castro and Barbara Liskov. `Practical Byzantine Fault
    Tolerance and Proactive
-   Recovery <http://www.itu.dk/stud/speciale/bepjea/xwebtex/litt/practical-byzantine-fault-tolerance-and-proactive-recovery.pdf>`__.
+   Recovery <http://research.microsoft.com/en-us/um/people/mcastro/publications/p398-castro-bft-tocs.pdf>`__.
    ACM Trans. Comput. Syst., 20(4):398–461, November 2002
 
 **Other suggested reading**
@@ -228,10 +226,11 @@ Week 7 - Distributed Hash Tables
 Week 8 - Distributed Data I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Note: Instructor will be out of town this week, and the discussions will be led by a
-guest instructor to be determined.*
+**NO CLASS ON Monday, May 16**
 
-**Required reading for Monday, May 16**
+**Required reading for Wednesday, May 18**
+
+Note: Discussion will be led by our TA, Stephen Rosen, this day.
 
 -  Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung. `The Google File
    System <http://static.googleusercontent.com/media/research.google.com/en/us/archive/gfs-sosp2003.pdf>`__.
@@ -239,9 +238,34 @@ guest instructor to be determined.*
 -  Jeffrey Dean and Sanjay Ghemawat. `MapReduce: Simplified Data
    Processing on Large
    Clusters <http://research.google.com/archive/mapreduce-osdi04.pdf>`__.
-   Commun. ACM, 51(1):107–113, January 2008
+   OSDI'04: Sixth Symposium on Operating System Design and Implementation, December, 2004.
+-  Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A.
+   Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, and Robert E.
+   Gruber. `Bigtable: A Distributed Storage System for Structured
+   Data <http://research.google.com/archive/bigtable-osdi06.pdf>`__. In
+   Proceedings of the 7th USENIX Symposium on Operating Systems Design
+   and Implementation - Volume 7, OSDI ’06, pages 15–15, Berkeley, CA,
+   USA, 2006. USENIX Association
 
-**Required reading for Wednesday, May 18**
+**Suggested papers**
+
+-  Daniel Ford, Francois Labelle, Florentina Popovici, Murray Stokely, Van-Anh Truong, Luiz Barroso, Carrie Grimes, Sean Quinlan. 
+   `Availability in Globally Distributed Storage Systems <http://static.usenix.org/events/osdi10/tech/full_papers/Ford.pdf>`__.
+   Proceedings of the 9th USENIX Symposium on Operating Systems Design and Implementation, USENIX (2010)
+-  Avinash Lakshman and Prashant Malik. `Cassandra: A Decentralized
+   Structured Storage
+   System <http://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf>`__.
+   SIGOPS Oper. Syst. Rev., 44(2):35–40, April 2010
+
+
+Week 9 - Distributed Data II
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Required reading for Monday, May 23**
+
+-  TBD
+
+**Required reading for Wednesday, May 25**
 
 -  James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes,
    Christopher Frost, J. J. Furman, Sanjay Ghemawat, Andrey Gubarev,
@@ -254,28 +278,6 @@ guest instructor to be determined.*
    In Proceedings of the 10th USENIX Conference on Operating Systems
    Design and Implementation, OSDI’12, pages 251–264, Berkeley, CA, USA,
    2012. USENIX Association
-
-**Suggested papers**
-
--  Daniel Ford, Francois Labelle, Florentina Popovici, Murray Stokely, Van-Anh Truong, Luiz Barroso, Carrie Grimes, Sean Quinlan. 
-   `Availability in Globally Distributed Storage Systems <http://static.usenix.org/events/osdi10/tech/full_papers/Ford.pdf>`__.
-   Proceedings of the 9th USENIX Symposium on Operating Systems Design and Implementation, USENIX (2010)
--  Avinash Lakshman and Prashant Malik. `Cassandra: A Decentralized
-   Structured Storage
-   System <http://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf>`__.
-   SIGOPS Oper. Syst. Rev., 44(2):35–40, April 2010
--  Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A.
-   Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, and Robert E.
-   Gruber. `Bigtable: A Distributed Storage System for Structured
-   Data <http://research.google.com/archive/bigtable-osdi06.pdf>`__. In
-   Proceedings of the 7th USENIX Symposium on Operating Systems Design
-   and Implementation - Volume 7, OSDI ’06, pages 15–15, Berkeley, CA,
-   USA, 2006. USENIX Association
-
-Week 9 - Distributed Data II
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Readings TBD
 
 Week 10 - Review
 ~~~~~~~~~~~~~~~~
