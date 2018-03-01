@@ -1,4 +1,4 @@
-Spring 2016 Calendar and Reading List
+Spring 2018 Calendar and Reading List
 -------------------------------------
 
 Make sure you don't miss the :ref:`additional-reading` at the bottom of this page.

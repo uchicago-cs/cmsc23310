@@ -6,15 +6,15 @@ Course Staff
 
 **Instructor**
 
-`Borja Sotomayor <http://people.cs.uchicago.edu/~borja/>`_ (borja@cs.uchicago.edu)
+`Ian Foster <http://people.cs.uchicago.edu/~foster/>`_ (foster@uchicago.edu)
 
-*Office*: Ryerson 165-A
+*Office*: Searle 222
 
 *Office hours*: By appointment.
 
 **TA**
 
-Stephen Rosen (sirosen@uchicago.edu)
+Yuliana Zamora (yzamora@uchicago.edu)
 
 *Office hours*: TBD
 
