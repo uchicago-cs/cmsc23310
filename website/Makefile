@@ -5,7 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
-BUILDDIR      = ../../gh-pages/
+BUILDDIR      = _build
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
@@ -48,10 +48,17 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
 
+# For the deploy target to work, a worktree must be created
+# in _build/html that tracks the gh-pages branch. You can do
+# so by running this from a freshly cloned version of the repo:
+#
+#   git worktree add -B gh-pages _build/html origin/gh-pages
+#
+
 deploy:
 	git --work-tree=$(BUILDDIR)/html/ --git-dir=$(BUILDDIR)/html/.git add -A .
 	git --work-tree=$(BUILDDIR)/html/ --git-dir=$(BUILDDIR)/html/.git commit -m"Updated website"
-	git --work-tree=$(BUILDDIR)/html/ --git-dir=$(BUILDDIR)/html/.git push origin gh-pages
+	git push origin gh-pages
 
 clean:
 	rm -rf $(BUILDDIR)/html/*
