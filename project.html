@@ -1,38 +1,33 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-<title>Project &mdash; CMSC 23310 - Advanced Distributed Systems</title>
+<title>Project &#8212; CMSC 23310 - Advanced Distributed Systems</title>
 
-    
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootswatch-3.3.4/united/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/chiweb.css" type="text/css" />
-    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="CMSC 23310 - Advanced Distributed Systems" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Programming Assignments" href="pa.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -40,7 +35,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body role="document">
+  <body>
 
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
@@ -98,17 +93,17 @@
 <h1>Project<a class="headerlink" href="#project" title="Permalink to this headline">¶</a></h1>
 <p><strong>Due (Graduating Students):</strong> Thursday, June 2nd &#64; 2pm</p>
 <p><strong>Due (Non-Graduating Students):</strong> Wednesday, June 8th &#64; 8pm</p>
-<p>Distributed data storage is an important case study for many of the concepts explored in this course. The sharp rise of NoSQL databases in the late 2000&#8217;s popularized data models, such as key-value stores, that departed from the traditional relational model. The development of these new models was usually motivated by the emerging field of large-scale distributed computing, and issues such as consistency and availability dominated the discussion of these models, with a bias towards sacrificing consistency for availability.</p>
-<p>Many of these design decisions and tradeoffs of these models frequently reference Eric Brewer&#8217;s CAP theorem but, as we discussed in class, distilling the CAP theorem into a &#8220;choose 2 of 3&#8221; rule of thumb can be misleading. In &#8220;CAP twelve years later&#8221;, Brewer restated the CAP theorem in contemporary terms with numerous clarifications. Among them, he stresses the original purpose of the CAP theorem and relates it to the BASE (Basically Available, Soft State, Eventually consistent) and ACID (Atomicity, Consistency, Isolation, Durability) models. When designing a database, or any other distributed system, Brewer argues for looking at the full range of possible designs, and he puts ACID and BASE at opposite ends of the CAP spectrum: ACID is consistent, BASE is available. As an example of how to think about these tradeoffs, Brewer mentions that doing Paxos, &#8220;just delays the decision. At some point the program must make the decision; retrying communication indefinitely is in essence choosing C over A.&#8221; Many examples of these types of tradeoffs are explored throughout the course, from distributed hash tables like Chord and Tapestry, to Google&#8217;s Bigtable and Spanner.</p>
-<p>In this project, you will explore these tradeoffs by developing a simple distributed key-value store (which we will refer to simply as the &#8220;data store&#8221;). You will develop your project using <a class="reference external" href="http://chi.cs.uchicago.edu/chistributed/">chistributed</a>, a framework that will allow you to simulate a distributed system on a single machine, allowing you to focus on the algorithms and protocols of your system, without having to deal with all the low-level details (like launching separate machines for each node in your distributed system, etc.). chistributed will also allow you to easily and deterministically simulate a variety of failures, to test whether your data store is resilient to them. While chistributed does impose a few constraints, such as a specific protocol for communications both inside the data store and with the external world, the actual implementation and features of your project will be up to you. In other words, your implementation could internally use the OM(m) algorithm, Paxos, Raft, a DHT, etc. Several implementation options are presented further below.</p>
+<p>Distributed data storage is an important case study for many of the concepts explored in this course. The sharp rise of NoSQL databases in the late 2000’s popularized data models, such as key-value stores, that departed from the traditional relational model. The development of these new models was usually motivated by the emerging field of large-scale distributed computing, and issues such as consistency and availability dominated the discussion of these models, with a bias towards sacrificing consistency for availability.</p>
+<p>Many of these design decisions and tradeoffs of these models frequently reference Eric Brewer’s CAP theorem but, as we discussed in class, distilling the CAP theorem into a “choose 2 of 3” rule of thumb can be misleading. In “CAP twelve years later”, Brewer restated the CAP theorem in contemporary terms with numerous clarifications. Among them, he stresses the original purpose of the CAP theorem and relates it to the BASE (Basically Available, Soft State, Eventually consistent) and ACID (Atomicity, Consistency, Isolation, Durability) models. When designing a database, or any other distributed system, Brewer argues for looking at the full range of possible designs, and he puts ACID and BASE at opposite ends of the CAP spectrum: ACID is consistent, BASE is available. As an example of how to think about these tradeoffs, Brewer mentions that doing Paxos, “just delays the decision. At some point the program must make the decision; retrying communication indefinitely is in essence choosing C over A.” Many examples of these types of tradeoffs are explored throughout the course, from distributed hash tables like Chord and Tapestry, to Google’s Bigtable and Spanner.</p>
+<p>In this project, you will explore these tradeoffs by developing a simple distributed key-value store (which we will refer to simply as the “data store”). You will develop your project using <a class="reference external" href="http://chi.cs.uchicago.edu/chistributed/">chistributed</a>, a framework that will allow you to simulate a distributed system on a single machine, allowing you to focus on the algorithms and protocols of your system, without having to deal with all the low-level details (like launching separate machines for each node in your distributed system, etc.). chistributed will also allow you to easily and deterministically simulate a variety of failures, to test whether your data store is resilient to them. While chistributed does impose a few constraints, such as a specific protocol for communications both inside the data store and with the external world, the actual implementation and features of your project will be up to you. In other words, your implementation could internally use the OM(m) algorithm, Paxos, Raft, a DHT, etc. Several implementation options are presented further below.</p>
 <div class="section" id="project-requirements">
 <h2>Project requirements<a class="headerlink" href="#project-requirements" title="Permalink to this headline">¶</a></h2>
-<p>The project is divided into two parts: the implementation and a paper. The implementation can be done in any language, as long as we can compile it and run it on a CS machine. The implementation grade will be based on whether you meet a set of requirements (described below). Your paper will describe your data store&#8217;s goals and requirements, the design decisions you made based on those requirements (including a justification of those decisions, based on relevant course readings or other literature) and a description of your implementation.</p>
+<p>The project is divided into two parts: the implementation and a paper. The implementation can be done in any language, as long as we can compile it and run it on a CS machine. The implementation grade will be based on whether you meet a set of requirements (described below). Your paper will describe your data store’s goals and requirements, the design decisions you made based on those requirements (including a justification of those decisions, based on relevant course readings or other literature) and a description of your implementation.</p>
 <p>The implementation is divided into the following components:</p>
 <ul class="simple">
 <li>20 points: Implementing <em>get</em> and <em>set</em>: Your implementation must be able to process <em>get</em> and <em>set</em> requests to the data store. For this part of the project, you do not have to replicate the data to other nodes (besides the one receiving the <em>get</em> or <em>set</em> message) or even be fault-tolerant.</li>
 <li>20 points: Basic replication: Your implementation must create replicas of the values (but not necessarily in a fault-tolerant manner).</li>
-<li>30 points: Fault tolerance: Given a call to <em>set</em> or <em>get</em>, the call must eventually succeed or return an error message. Either call can be delayed in the presence of failures but, in the absence of failures, all calls must eventually succeed. The consistency model is up to you, but the returned values cannot be trivially consistent (e.g., a data store that always returns the value 42). These conditions should be met in the presence of...<ul>
+<li>30 points: Fault tolerance: Given a call to <em>set</em> or <em>get</em>, the call must eventually succeed or return an error message. Either call can be delayed in the presence of failures but, in the absence of failures, all calls must eventually succeed. The consistency model is up to you, but the returned values cannot be trivially consistent (e.g., a data store that always returns the value 42). These conditions should be met in the presence of…<ul>
 <li>Byzantine, fail-stop, or fail-recover failures (15 points). Note: it is enough for you to be resilient one of these types of failures; you do not need to be resilient to all of them.</li>
 <li>Network partitions (15 points)</li>
 </ul>
@@ -127,7 +122,7 @@
 </div>
 <div class="section" id="implementation-options">
 <h2>Implementation options<a class="headerlink" href="#implementation-options" title="Permalink to this headline">¶</a></h2>
-<p>In this project, you are free to implement your data store in any way you want, as long as it meets the requirements outlined above. However, unless there is a fault tolerant distributed algorithm you&#8217;ve really really really been dying to try out, we encourage you to choose from one of the following four project ideas.</p>
+<p>In this project, you are free to implement your data store in any way you want, as long as it meets the requirements outlined above. However, unless there is a fault tolerant distributed algorithm you’ve really really really been dying to try out, we encourage you to choose from one of the following four project ideas.</p>
 <div class="section" id="multi-paxos">
 <h3>Multi-Paxos<a class="headerlink" href="#multi-paxos" title="Permalink to this headline">¶</a></h3>
 <p>In Programming Assignment #2, you implemented a basic version of Paxos where you always ran a single instance of Paxos at a time, without the possibility of having multiple instances running concurrently. You can build on this and write a data store that uses Multi-Paxos at its heart, similar to the Chubby service. If you choose this option, your project should do more than simply run a full instance of Paxos for each <em>get</em> and <em>set</em> operation; you should, at the very least, incorporate the notion of a distinguished proposer such that, as long as the proposer does not fail, the first phase of the algorithm does not have to be re-run for every instance.</p>
@@ -142,10 +137,10 @@
 </div>
 <div class="section" id="scatter-dhts-and-paxos">
 <h3>Scatter: DHTs and Paxos<a class="headerlink" href="#scatter-dhts-and-paxos" title="Permalink to this headline">¶</a></h3>
-<p>Can&#8217;t choose between consistency and availability? Why not do both? If you&#8217;re feeling particularly brave, you can implement Scatter, a system we did not discuss in class. <a class="reference external" href="http://homes.cs.washington.edu/~arvind/papers/scatter.pdf">Scatter</a> is a DHT which tries to be more consistent than a simpler DHT, while maintaining high availability. As usual, this is a tradeoff: it is neither perfectly consistent nor perfectly available, as nodes come and go in the network. The basic idea is that when partitioning the keyspace amongst the nodes, the nodes are put into discrete groups. Updates to keys must be agreed upon via Paxos within the responsible group. This drastically improves consistency, since any nodes responsible for a given key will have the same value (subject to the assumptions and constraints of Paxos).</p>
+<p>Can’t choose between consistency and availability? Why not do both? If you’re feeling particularly brave, you can implement Scatter, a system we did not discuss in class. <a class="reference external" href="http://homes.cs.washington.edu/~arvind/papers/scatter.pdf">Scatter</a> is a DHT which tries to be more consistent than a simpler DHT, while maintaining high availability. As usual, this is a tradeoff: it is neither perfectly consistent nor perfectly available, as nodes come and go in the network. The basic idea is that when partitioning the keyspace amongst the nodes, the nodes are put into discrete groups. Updates to keys must be agreed upon via Paxos within the responsible group. This drastically improves consistency, since any nodes responsible for a given key will have the same value (subject to the assumptions and constraints of Paxos).</p>
 <p>Scatter also extends Paxos to deal cleanly with adding and removing nodes over time, further improving availability. You can think of it as keeping the information about which nodes are in a given group under the same consistency restraints as keys in that group: to add a node to a group, the group runs Paxos. Scatter exploits this to avoid routing inconsistencies, where a node may think it is responsible for a given key range, when changes to the network topology have made it responsible for another.</p>
 <p>Both of these (key range consistency and routing consistency) are separate optimizations. Either would be an approachable extension of a DHT system such as Chord or Pastry, and would be very appropriate for this project.</p>
-<p>Note that if you choose to implement a more-or-less &#8220;vanilla&#8221; DHT, you should focus on the fundamental design choices of a DHT: keyspace partitioning method, routing algorithm, etc. If you choose to do a DHT+Paxos project, as described here, the choice of those fundamentals will be less important than how you integrate Paxos with them.</p>
+<p>Note that if you choose to implement a more-or-less “vanilla” DHT, you should focus on the fundamental design choices of a DHT: keyspace partitioning method, routing algorithm, etc. If you choose to do a DHT+Paxos project, as described here, the choice of those fundamentals will be less important than how you integrate Paxos with them.</p>
 </div>
 <div class="section" id="other-options">
 <h3>Other Options<a class="headerlink" href="#other-options" title="Permalink to this headline">¶</a></h3>
@@ -163,7 +158,7 @@
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">impl</span></code>: This directory must include all your source code. If you used a compiled language, you <em>must</em> include a Makefile to compile your code. This directory must include the implementation-oriented README file described earlier.</li>
 <li><code class="docutils literal"><span class="pre">impl/scripts</span></code>: chistributed scripts and configuration files that we can use to test your implementation. You must include, at least, the scripts that are described in your paper.</li>
-<li><code class="docutils literal"><span class="pre">paper</span></code>: Must contain a PDF file, <code class="docutils literal"><span class="pre">project.pdf</span></code>, with your final paper. If you are using LaTeX, Markdown, etc. you may also store your paper&#8217;s source code in this directory.</li>
+<li><code class="docutils literal"><span class="pre">paper</span></code>: Must contain a PDF file, <code class="docutils literal"><span class="pre">project.pdf</span></code>, with your final paper. If you are using LaTeX, Markdown, etc. you may also store your paper’s source code in this directory.</li>
 </ul>
 <p>The root of your repository must include a <code class="docutils literal"><span class="pre">README.md</span></code> file with the following information:</p>
 <ul class="simple">
@@ -186,8 +181,8 @@
       
     </p>
     <p>
-        &copy; Copyright 2012-2016, The University of Chicago.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.<br/>
+        &copy; Copyright 2012-2018, The University of Chicago.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.<br/>
     </p>
   </div>
 </footer>

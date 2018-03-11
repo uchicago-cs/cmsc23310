@@ -1,39 +1,34 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-<title>Syllabus &mdash; CMSC 23310 - Advanced Distributed Systems</title>
+<title>Syllabus &#8212; CMSC 23310 - Advanced Distributed Systems</title>
 
-    
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootswatch-3.3.4/united/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/chiweb.css" type="text/css" />
-    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="CMSC 23310 - Advanced Distributed Systems" href="index.html" />
-    <link rel="next" title="Spring 2016 Calendar and Reading List" href="calendar.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Spring 2018 Calendar and Reading List" href="calendar.html" />
     <link rel="prev" title="CMSC 23310 - Advanced Distributed Systems" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -41,7 +36,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body role="document">
+  <body>
 
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
@@ -100,8 +95,8 @@
 <div class="section" id="course-description">
 <h2>Course description<a class="headerlink" href="#course-description" title="Permalink to this headline">¶</a></h2>
 <p>In recent years, large distributed systems have taken a prominent role not just in scientific inquiry, but also in our daily lives. When we perform a search on Google, stream content from Netflix, place an order on Amazon, or catch up on the latest comings-and-goings on Facebook, our seemingly minute requests are processed by complex systems that sometimes include hundreds of thousands of computers, connected by both local and wide area networks.</p>
-<p>Recent papers in the field of Distributed Systems have described several solutions (such as BigTable, MapReduce, Spanner, Raft, Dynamo, Cassandra, etc.) for managing large-scale data and computation. However, building and using these systems poses a number of more fundamental challenges: How do we keep the system operating correctly even when individual machines fail? How do we ensure that all the machines have a consistent view of the system&#8217;s state? (and how do we ensure this in the presence of failures?) How can we determine the order of events in a system where we can&#8217;t assume a single global clock?</p>
-<p>Many of these fundamental problems were identified and solved over the course of several decades, starting in the 1970&#8217;s. In this course, we will engage in reading and discussing seminal work in Distributed Systems from the last 35 years to (1) identify the fundamental issues raised in this earlier work, (2) relate those issues to current research problems, and (3) evaluate and compare the solutions proposed in both early and recent work. During this course, students will also implement a distributed system that requires them to manage distribute resources and evaluate whether the resulting system has certain properties, such as reliability, scalability, etc.</p>
+<p>Recent papers in the field of Distributed Systems have described several solutions (such as BigTable, MapReduce, Spanner, Raft, Dynamo, Cassandra, etc.) for managing large-scale data and computation. However, building and using these systems poses a number of more fundamental challenges: How do we keep the system operating correctly even when individual machines fail? How do we ensure that all the machines have a consistent view of the system’s state? (and how do we ensure this in the presence of failures?) How can we determine the order of events in a system where we can’t assume a single global clock?</p>
+<p>Many of these fundamental problems were identified and solved over the course of several decades, starting in the 1970’s. In this course, we will engage in reading and discussing seminal work in Distributed Systems from the last 35 years to (1) identify the fundamental issues raised in this earlier work, (2) relate those issues to current research problems, and (3) evaluate and compare the solutions proposed in both early and recent work. During this course, students will also implement a distributed system that requires them to manage distribute resources and evaluate whether the resulting system has certain properties, such as reliability, scalability, etc.</p>
 <p>At the end of the quarter, students will be able to:</p>
 <ol class="arabic simple">
 <li>Identify the research questions posed in a scholarly paper and the solutions proposed in that paper.</li>
@@ -125,7 +120,7 @@
 <p>Every week, we will discuss several papers in class (see <a class="reference external" href="calendar.html">Calendar and Reading List</a> for the list of papers). The papers for a given week will have a common theme, but the papers will be split between the Monday and Wednesday classes.</p>
 <p>At the beginning of the quarter, students will be divided into three groups: A, B, and C. Although the composition of the groups will remain fixed throughout the quarter, the <em>role</em> that each group will take during a discussion section will rotate every week. There are three roles:</p>
 <ul class="simple">
-<li><strong>The Questioners</strong>: This group is responsible for preparing a list of 4&#8211;5 discussion questions about the papers to be discussed in class. For a given week, <em>The Questioners</em> must prepare their questions during the preceding week, and send them to the rest of the class by the end of the day on Sunday. This means that <em>The Questioners</em> must read all the papers for their assigned week several days in advance of the actual discussion sessions. We suggest aiming to read the papers by the end of the day on Friday, to allow the weekend to discuss possible questions.</li>
+<li><strong>The Questioners</strong>: This group is responsible for preparing a list of 4–5 discussion questions about the papers to be discussed in class. For a given week, <em>The Questioners</em> must prepare their questions during the preceding week, and send them to the rest of the class by the end of the day on Sunday. This means that <em>The Questioners</em> must read all the papers for their assigned week several days in advance of the actual discussion sessions. We suggest aiming to read the papers by the end of the day on Friday, to allow the weekend to discuss possible questions.</li>
 <li><strong>The Answerers</strong>: During a discussion, this group takes the lead in answering the questions posed by <em>The Questioners</em>. In practice, this means that, whenever there is silence in the discussion, everyone looks at <em>The Answerers</em> to keep the discussion moving.</li>
 <li><strong>The Observers</strong>: During a discussion, this group will take notes on a shared document. These notes are not meant to be a transcription of what is being said in the discussion; they should capture the major take-away points of the discussion, as well as any issues <em>The Observers</em> feel should be discussed in more depth. <em>The Observers</em> can also search for additional resources, or answers to unresolved questions, on the Internet during the discussion itself.</li>
 </ul>
@@ -156,7 +151,7 @@
 </li>
 </ul>
 <p>There will be no midterms or final exam.</p>
-<p>The &#8220;in-class participation&#8221; grade is an individual grade, scored out of 10:</p>
+<p>The “in-class participation” grade is an individual grade, scored out of 10:</p>
 <ul class="simple">
 <li>10: Student participates consistently in all or most class discussions, even when part of <em>The Observers</em>.</li>
 <li>9: Student participates consistently in all or most class discussions.</li>
@@ -164,15 +159,15 @@
 <li>7: Student has participated in class discussions, but falls below expectations.</li>
 <li>0: Student has not participated in any class discussions.</li>
 </ul>
-<p>The &#8220;Piazza participation&#8221; grade is an individual grade, mostly based on participation when the student is part of <em>The Questioners</em>. It is scored out of 10:</p>
+<p>The “Piazza participation” grade is an individual grade, mostly based on participation when the student is part of <em>The Questioners</em>. It is scored out of 10:</p>
 <ul class="simple">
-<li>10: Student is consistently active on Piazza, not just contributing good questions when the student&#8217;s group is <em>The Questioners</em> but also writing/answering posts outside his/her group.</li>
+<li>10: Student is consistently active on Piazza, not just contributing good questions when the student’s group is <em>The Questioners</em> but also writing/answering posts outside his/her group.</li>
 <li>9: Student consistently contributes good questions, but is only active on Piazza when his/her group is <em>The Questioners</em>.</li>
 <li>8: Student has contributed questions or written/answered posts, but participation has not been consistent (e.g., very active one week, completely silent in another)</li>
 <li>7: Student has contributed questions or written/answered posts, but falls below expectations.</li>
 <li>0: Student has not written any meaningful posts or comments on Piazza.</li>
 </ul>
-<p>The &#8220;Participation in <em>The Observers</em>&#8221; grade is a <em>group</em> grade. A grade is assigned to the entire group whenever their role is <em>The Observers</em>, and the final grade is the average of those grades. Each student in the group gets the same grade. It is scored out of 10:</p>
+<p>The “Participation in <em>The Observers</em>” grade is a <em>group</em> grade. A grade is assigned to the entire group whenever their role is <em>The Observers</em>, and the final grade is the average of those grades. Each student in the group gets the same grade. It is scored out of 10:</p>
 <ul class="simple">
 <li>10: Discussion log is detailed and well-written, and the group has supplemented it with external references (not limited to the suggested reading for that week) and/or provided answers to questions that were left unanswered during the discussion.</li>
 <li>9: Discussion log is detailed, divided into concrete sections, and well-written. The group has gone beyond just presenting their raw notes from the discussion, and has put some effort into polishing up the notes. Someone who has not attended the discussion or even read the paper would get the gist of what was discussed that week.</li>
@@ -232,10 +227,10 @@ without hiding behind a veil of anonymity.</p>
 is your responsibility to check Piazza often to see if there are any
 announcements. Please note that you can configure your Piazza account to
 send you e-mail notifications every time there is a new post on Piazza.
-Just go to your Account Settings, then to Class Settings, click on &#8220;Edit
-Notifications&#8221; under CMSC 23310. We encourage you to select either the
-&#8220;Real Time&#8221; option (get a notification as soon as there are new posts)
-or the &#8220;Smart Digest&#8221; option (get a summary of all the posts sent over
+Just go to your Account Settings, then to Class Settings, click on “Edit
+Notifications” under CMSC 23310. We encourage you to select either the
+“Real Time” option (get a notification as soon as there are new posts)
+or the “Smart Digest” option (get a summary of all the posts sent over
 the last 1-6 hours – you can select the frequency).</p>
 </div>
 <div class="section" id="acknowledgements">
@@ -257,8 +252,8 @@ the last 1-6 hours – you can select the frequency).</p>
       
     </p>
     <p>
-        &copy; Copyright 2012-2016, The University of Chicago.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.<br/>
+        &copy; Copyright 2012-2018, The University of Chicago.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.<br/>
     </p>
   </div>
 </footer>

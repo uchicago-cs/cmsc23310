@@ -1,45 +1,40 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-<title>Submitting a project &mdash; CMSC 23310 - Advanced Distributed Systems</title>
+<title>Submitting a project &#8212; CMSC 23310 - Advanced Distributed Systems</title>
 
-    
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootswatch-3.3.4/united/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/chiweb.css" type="text/css" />
-    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="CMSC 23310 - Advanced Distributed Systems" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body role="document">
+  <body>
 
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
@@ -100,28 +95,28 @@
 <ul class="simple">
 <li>Submissions are made using the <code class="docutils literal"><span class="pre">chisubmit</span></code> tool. Make sure you run these commands from your chisubmit directory
 (the one you initialized with <code class="docutils literal"><span class="pre">chisubmit</span> <span class="pre">init</span></code> as described in <a class="reference external" href="registering.html">Registering for the projects</a>).</li>
-<li>Before making a submission, make sure you have pushed your code to the GitLab server. If your code hasn&#8217;t been pushed to GitLab, then <code class="docutils literal"><span class="pre">chisubmit</span></code> will not see it.</li>
+<li>Before making a submission, make sure you have pushed your code to the GitLab server. If your code hasn’t been pushed to GitLab, then <code class="docutils literal"><span class="pre">chisubmit</span></code> will not see it.</li>
 </ul>
 </div>
 <div class="section" id="selecting-the-commit-you-want-to-submit">
 <h2>Selecting the commit you want to submit<a class="headerlink" href="#selecting-the-commit-you-want-to-submit" title="Permalink to this headline">¶</a></h2>
 <p>To submit a project for grading, you first need to select the specific commit you want us to grade. Commits in git are identified by a SHA-1 hash, and look something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">4</span><span class="n">eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5</span>
 </pre></div>
 </div>
 <p>You can see the list of commits in your repository by running the following:</p>
-<div class="highlight-python"><div class="highlight"><pre>git log
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">log</span>
 </pre></div>
 </div>
 <p>Or, if you simply want to get the SHA-1 hash of the latest commit in your <cite>master</cite> branch, you can just run this:</p>
-<div class="highlight-python"><div class="highlight"><pre>git rev-parse master
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">rev</span><span class="o">-</span><span class="n">parse</span> <span class="n">master</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="making-the-submission">
 <h2>Making the submission<a class="headerlink" href="#making-the-submission" title="Permalink to this headline">¶</a></h2>
-<p>Once you&#8217;ve identified the commit you want to submit, you need to run the following <strong>BEFORE THE DEADLINE</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment submit &lt;team-id&gt; &lt;assignment-id&gt; &lt;commit-sha&gt;
+<p>Once you’ve identified the commit you want to submit, you need to run the following <strong>BEFORE THE DEADLINE</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chisubmit</span> <span class="n">student</span> <span class="n">assignment</span> <span class="n">submit</span> <span class="o">&lt;</span><span class="n">team</span><span class="o">-</span><span class="nb">id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">assignment</span><span class="o">-</span><span class="nb">id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">commit</span><span class="o">-</span><span class="n">sha</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Where:</p>
@@ -131,11 +126,11 @@
 <li><code class="docutils literal"><span class="pre">&lt;commit-sha&gt;</span></code> is the SHA-1 hash of the commit you want to submit.</li>
 </ul>
 <p>For example, the command could look something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment submit amr-borja p1a 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chisubmit</span> <span class="n">student</span> <span class="n">assignment</span> <span class="n">submit</span> <span class="n">amr</span><span class="o">-</span><span class="n">borja</span> <span class="n">p1a</span> <span class="mi">4</span><span class="n">eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5</span>
 </pre></div>
 </div>
 <p>You will be given an opportunity to verify the details of the submission before you actually submit your code. For example, the above command would print something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>You are going to make a submission for p1a (chirc: Part 1).
+<div class="highlight-default"><div class="highlight"><pre><span></span>You are going to make a submission for p1a (chirc: Part 1).
 The commit you are submitting is the following:
 
       Commit: 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
@@ -154,45 +149,45 @@ You will have 4 extensions left after this submission.
 Are you sure you want to continue? (y/n):
 </pre></div>
 </div>
-<p>Before you type &#8220;y&#8221;, <strong>take a moment to ensure that this commit is the one you actually want to submit</strong>. If the commit message and date shown by chisubmit don&#8217;t look right, then you should double-check whether you were able to successfully commit and push your code.</p>
-<p>Finally, remember that the above has to be run <em>before the deadline</em>. If you fail to do so, it doesn&#8217;t matter if your code was pushed to the GitLab server before the deadline. For your code to be accepted for grading, you must also run the <cite>chisubmit</cite> submission command before the deadline. The <cite>chisubmit</cite> system will mercilessly stop accepting submissions once the deadline has passed.</p>
+<p>Before you type “y”, <strong>take a moment to ensure that this commit is the one you actually want to submit</strong>. If the commit message and date shown by chisubmit don’t look right, then you should double-check whether you were able to successfully commit and push your code.</p>
+<p>Finally, remember that the above has to be run <em>before the deadline</em>. If you fail to do so, it doesn’t matter if your code was pushed to the GitLab server before the deadline. For your code to be accepted for grading, you must also run the <cite>chisubmit</cite> submission command before the deadline. The <cite>chisubmit</cite> system will mercilessly stop accepting submissions once the deadline has passed.</p>
 </div>
 <div class="section" id="verifying-that-your-submission-went-through">
 <h2>Verifying that your submission went through<a class="headerlink" href="#verifying-that-your-submission-went-through" title="Permalink to this headline">¶</a></h2>
 <p>The following command will show you the projects you are registered for, and whether you have made a submission for them:</p>
-<div class="highlight-python"><div class="highlight"><pre>chisubmit student team show TEAM_ID
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chisubmit</span> <span class="n">student</span> <span class="n">team</span> <span class="n">show</span> <span class="n">TEAM_ID</span>
 </pre></div>
 </div>
 <p>If you have not submitted a project, you will see something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>ASSIGNMENTS
------------
-ID: pa1
-Name: Programming Assignment 1
-Deadline: 2015-10-07 01:07:15+00:00
-NOT SUBMITTED
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ASSIGNMENTS</span>
+<span class="o">-----------</span>
+<span class="n">ID</span><span class="p">:</span> <span class="n">pa1</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Programming</span> <span class="n">Assignment</span> <span class="mi">1</span>
+<span class="n">Deadline</span><span class="p">:</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">07</span> <span class="mi">01</span><span class="p">:</span><span class="mi">07</span><span class="p">:</span><span class="mi">15</span><span class="o">+</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span>
+<span class="n">NOT</span> <span class="n">SUBMITTED</span>
 </pre></div>
 </div>
 <p>If you have submitted the project correctly, you will see something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>ASSIGNMENTS
------------
-ID: pa1
-Name: Programming Assignment 1
-Deadline: 2015-10-07 01:07:15+00:00
-Last submitted at: 2015-10-07 00:07:20.017641+00:00
-Commit SHA: 2e5969ce281b88bcb3743dc81539623124e63f41
-Extensions used: 0
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ASSIGNMENTS</span>
+<span class="o">-----------</span>
+<span class="n">ID</span><span class="p">:</span> <span class="n">pa1</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Programming</span> <span class="n">Assignment</span> <span class="mi">1</span>
+<span class="n">Deadline</span><span class="p">:</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">07</span> <span class="mi">01</span><span class="p">:</span><span class="mi">07</span><span class="p">:</span><span class="mi">15</span><span class="o">+</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span>
+<span class="n">Last</span> <span class="n">submitted</span> <span class="n">at</span><span class="p">:</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">07</span> <span class="mi">00</span><span class="p">:</span><span class="mi">07</span><span class="p">:</span><span class="mf">20.017641</span><span class="o">+</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span>
+<span class="n">Commit</span> <span class="n">SHA</span><span class="p">:</span> <span class="mf">2e5969</span><span class="n">ce281b88bcb3743dc81539623124e63f41</span>
+<span class="n">Extensions</span> <span class="n">used</span><span class="p">:</span> <span class="mi">0</span>
 </pre></div>
 </div>
-<p>If you want to be extra sure, you can log into the <a class="reference external" href="https://mit.cs.uchicago.edu">GitLab server</a>, then click on your repository  on the right side of the page, then click on &#8220;Commits&#8221; on the right side of the page. You will see the list of commits that are on the server (this is what the graders will see). On the right side of the page, you will see the first eight characters of each commit&#8217;s SHA; find the one that was shown by <code class="docutils literal"><span class="pre">chisubmit</span> <span class="pre">student</span> <span class="pre">team</span> <span class="pre">show</span> <span class="pre">command</span></code>, and verify that it is, indeed the version of the code that you want the graders to grade.</p>
+<p>If you want to be extra sure, you can log into the <a class="reference external" href="https://mit.cs.uchicago.edu">GitLab server</a>, then click on your repository  on the right side of the page, then click on “Commits” on the right side of the page. You will see the list of commits that are on the server (this is what the graders will see). On the right side of the page, you will see the first eight characters of each commit’s SHA; find the one that was shown by <code class="docutils literal"><span class="pre">chisubmit</span> <span class="pre">student</span> <span class="pre">team</span> <span class="pre">show</span> <span class="pre">command</span></code>, and verify that it is, indeed the version of the code that you want the graders to grade.</p>
 </div>
 <div class="section" id="amending-a-submission">
 <h2>Amending a submission<a class="headerlink" href="#amending-a-submission" title="Permalink to this headline">¶</a></h2>
 <p>If you make a submission, and realize you want to change something in your submission, all you have to do is make the changes, commit them, and run <code class="docutils literal"><span class="pre">chisubmit</span> <span class="pre">student</span> <span class="pre">assignment</span> <span class="pre">submit</span></code> with the new commit and with the <code class="docutils literal"><span class="pre">--force</span></code> option. For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment submit amr-borja p1a 3bc2ab13a504393e12c48a3b8a56510a901329fd --force
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chisubmit</span> <span class="n">student</span> <span class="n">assignment</span> <span class="n">submit</span> <span class="n">amr</span><span class="o">-</span><span class="n">borja</span> <span class="n">p1a</span> <span class="mi">3</span><span class="n">bc2ab13a504393e12c48a3b8a56510a901329fd</span> <span class="o">--</span><span class="n">force</span>
 </pre></div>
 </div>
 <p><code class="docutils literal"><span class="pre">chisubmit</span></code> will warn you that there is an existing submission, and will ask you to confirm that you want to make a new one:</p>
-<div class="highlight-python"><div class="highlight"><pre>WARNING: You have already submitted assignment p1a and you
+<div class="highlight-default"><div class="highlight"><pre><span></span>WARNING: You have already submitted assignment p1a and you
 are about to overwrite the previous submission of the following commit:
 
       Commit: 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5
@@ -226,11 +221,11 @@ Are you sure you want to continue? (y/n):  y
 </div>
 <p>Like your first submission, you can only re-submit <em>before the deadline</em>. Once the deadline passes, you cannot modify your submission, not even if you use extensions.</p>
 <p>If you make a submission and, before the deadline, you realize you want to use an extension (and re-submit after the deadline with an extension), then you need to make sure you <strong>cancel</strong> your submission before the deadline. For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment cancel-submit amr-borja p1a
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chisubmit</span> <span class="n">student</span> <span class="n">assignment</span> <span class="n">cancel</span><span class="o">-</span><span class="n">submit</span> <span class="n">amr</span><span class="o">-</span><span class="n">borja</span> <span class="n">p1a</span>
 </pre></div>
 </div>
 <p>You will see something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>This is your existing submission for assignment pa1:
+<div class="highlight-default"><div class="highlight"><pre><span></span>This is your existing submission for assignment pa1:
 
       Commit: 3bc2ab13a504393e12c48a3b8a56510a901329fd
         Date: 2015-01-07 08:59:31
@@ -246,13 +241,13 @@ Your submission has been cancelled.
 <div class="section" id="using-extensions">
 <h2>Using extensions<a class="headerlink" href="#using-extensions" title="Permalink to this headline">¶</a></h2>
 <p>First of all, please note that you do not need to ask the instructors for permission to use an extension. Please do not e-mail us to ask for permission to use an extension, or even to inform us that you intend to use one. All of this is handled automatically by the chisubmit system. To use an extension, you need to use the <code class="docutils literal"><span class="pre">--extensions</span></code> option when submitting your assignment. For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment submit &lt;team-id&gt; &lt;project-id&gt; &lt;commit-sha&gt; --extensions &lt;num-extensions&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chisubmit</span> <span class="n">student</span> <span class="n">assignment</span> <span class="n">submit</span> <span class="o">&lt;</span><span class="n">team</span><span class="o">-</span><span class="nb">id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">project</span><span class="o">-</span><span class="nb">id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">commit</span><span class="o">-</span><span class="n">sha</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">extensions</span> <span class="o">&lt;</span><span class="n">num</span><span class="o">-</span><span class="n">extensions</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>If you are using an extension, you do not need to run this command before the original deadline. Instead, you should allow the original deadline to pass, and then make sure that you make your submission (with the extension) before the extended deadline. So, if the deadline is January 12 at 8pm, and you plan to use two extensions, then the extended deadline is January 14 at 8pm.</p>
 <p>chisubmit will validate that the number of extensions you’re requesting is acceptable based on the submission time, the deadline, and the number of extensions you have left. chisubmit will not allow you to submit your code if you try to request too many or not enough extensions (or if you do not have sufficient extensions to make the submission).</p>
 <p>For example, you could run the command like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>chisubmit student assignment submit amr-borja p1a 4eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5 --extensions 1
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chisubmit</span> <span class="n">student</span> <span class="n">assignment</span> <span class="n">submit</span> <span class="n">amr</span><span class="o">-</span><span class="n">borja</span> <span class="n">p1a</span> <span class="mi">4</span><span class="n">eac77c9f11dfb101dbbbe3e9f2df07c40f9b2f5</span> <span class="o">--</span><span class="n">extensions</span> <span class="mi">1</span>
 </pre></div>
 </div>
 <p>Please note that if you amend a submission (using the <code class="docutils literal"><span class="pre">--force</span></code> parameter) for which you have used extensions, you need
@@ -262,13 +257,13 @@ submission; you are simply reasserting how many extensions you are using.</p>
 <div class="section" id="checking-your-remaining-number-of-extensions">
 <h2>Checking your remaining number of extensions<a class="headerlink" href="#checking-your-remaining-number-of-extensions" title="Permalink to this headline">¶</a></h2>
 <p>To see how many late chips you have left, run this:</p>
-<div class="highlight-python"><div class="highlight"><pre>chisubmit student course show-extensions
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chisubmit</span> <span class="n">student</span> <span class="n">course</span> <span class="n">show</span><span class="o">-</span><span class="n">extensions</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="making-a-safety-submission">
 <h2>Making a safety submission<a class="headerlink" href="#making-a-safety-submission" title="Permalink to this headline">¶</a></h2>
-<p>Take into account that chisubmit allows you to make multiple submissions before the deadline. A good strategy is to always make a &#8220;safety submission&#8221; well ahead of the deadline. For example, if a project has five tasks, and you have completed four of those tasks but expect to be working on the fifth one right up until the deadline, you should make a submission before you start working on the fifth task. That way, if you end up missing the deadline, there is already a submission in the system with most of your work on it (which may not be as good as a submission with partial or complete work for that fifth task, but still better than not submitting anything at all).</p>
+<p>Take into account that chisubmit allows you to make multiple submissions before the deadline. A good strategy is to always make a “safety submission” well ahead of the deadline. For example, if a project has five tasks, and you have completed four of those tasks but expect to be working on the fifth one right up until the deadline, you should make a submission before you start working on the fifth task. That way, if you end up missing the deadline, there is already a submission in the system with most of your work on it (which may not be as good as a submission with partial or complete work for that fifth task, but still better than not submitting anything at all).</p>
 <p><strong>Safety submissions are specially important if you have used all your extensions</strong>. If the deadline passes and you have not made any submissions, and you are out of late chips, that means an automatic zero on that assignment.</p>
 </div>
 </div>
@@ -285,8 +280,8 @@ submission; you are simply reasserting how many extensions you are using.</p>
       
     </p>
     <p>
-        &copy; Copyright 2012-2016, The University of Chicago.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.<br/>
+        &copy; Copyright 2012-2018, The University of Chicago.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.<br/>
     </p>
   </div>
 </footer>
