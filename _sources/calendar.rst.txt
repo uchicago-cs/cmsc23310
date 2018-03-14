@@ -27,14 +27,14 @@ and see how everything fits together.
 Week 2 - Distributed Time
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Monday, April 4**
+**Required reading for Tuesday, April 3**
 
 -  Leslie Lamport. `Time, Clocks, and the Ordering of Events in a
    Distributed
    System <http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf>`__.
    Commun.ACM, 21(7):558–565, July 1978
 
-**Required reading for Wednesday, April 6**
+**Required reading for Thursday, April 5**
 
 -  C. J. Fidge.\ `Timestamps in Message-Passing Systems that Preserve
    the Partial
@@ -60,14 +60,14 @@ Week 2 - Distributed Time
 Week 3 - Distributed Consensus I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Monday, April 11**
+**Required reading for Tuesday, April 10**
 
 -  Leslie Lamport, Robert Shostak, and Marshall Pease. `The Byzantine
    Generals
    Problem <http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf>`__.
    ACM Trans. Program. Lang. Syst., 4(3):382–401, July 1982
 
-**Required reading for Wednesday, April 13**
+**Required reading for Thursday, April 12**
    
 -  D. Skeen. `A Quorum-Based Commit Protocol <https://ecommons.cornell.edu/handle/1813/6323>`_. Technical Report 82-483. Department of
    Computer Science, Cornell University. February 1982.   
@@ -109,7 +109,7 @@ Week 3 - Distributed Consensus I
 Week 4 - Limits of Distributed Systems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Monday, April 18**
+**Required reading for Tuesday, April 17**
 
 -  Michael J. Fischer, Nancy A. Lynch, and Michael S. Paterson.
    `Impossibility of distributed consensus with one faulty
@@ -120,7 +120,7 @@ Week 4 - Limits of Distributed Systems
    Consensus <http://groups.csail.mit.edu/tds/papers/Stockmeyer/DolevDS83-focs.pdf>`__.
    J. ACM, 34(1):77–97, January 1987
 
-**Required reading for Wednesday, April 20**
+**Required reading for Thursday, April 19**
 
 -  Seth Gilbert and Nancy Lynch. `Brewer's Conjecture and the
    Feasibility of Consistent, Available, Partition-Tolerant Web
@@ -153,7 +153,7 @@ Week 4 - Limits of Distributed Systems
 Week 5 - Paxos
 ~~~~~~~~~~~~~~
 
-**Required reading for Monday, April 25 and Wednesday April 27**
+**Required reading for Tuesday, April 24 and Thursday April 26**
 
 -  Leslie Lamport. `The Part-Time
    Parliament <http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf>`__.
@@ -170,7 +170,7 @@ Week 5 - Paxos
 Week 6 - Distributed Consensus II
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Monday, May 2**
+**Required reading for Tuesday, May 1**
 
 -  Mike Burrows. `The Chubby Lock Service for Loosely-Coupled
    Distributed
@@ -185,7 +185,7 @@ Week 6 - Distributed Consensus II
    of distributed computing, PODC ’07, pages 398–407, New York, NY, USA,
    2007. ACM
 
-**Required reading for Wednesday, May 4**
+**Required reading for Thursday, May 3**
 
 -  Diego Ongaro and John Ousterhout. `In search of an understandable
    consensus algorithm <http://ramcloud.stanford.edu/raft.pdf>`__, 2014
@@ -197,7 +197,7 @@ Week 6 - Distributed Consensus II
 Week 7 - Distributed Hash Tables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Monday, May 9**
+**Required reading for Tuesday, May 8**
 
 -  Ion Stoica, Robert Morris, David Karger, M. Frans Kaashoek, and Hari
    Balakrishnan. `Chord: A scalable peer-to-peer lookup service for
@@ -212,7 +212,7 @@ Week 7 - Distributed Hash Tables
    Distributed Systems Platforms Heidelberg, Middleware ’01, pages
    329–350, London, UK, UK, 2001. Springer-Verlag
 
-**Required reading for Wednesday, May 11**
+**Required reading for Thursday, May 10**
 
 -  Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan
    Kakulapati, Avinash Lakshman, Alex Pilchin, Swaminathan
@@ -226,11 +226,11 @@ Week 7 - Distributed Hash Tables
 Week 8 - Distributed Data I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**NO CLASS ON Monday, May 16**
+**Required reading for Tuesday May 15**
 
-**Required reading for Wednesday, May 18**
+- TBD
 
-Note: Discussion will be led by our TA, Stephen Rosen, this day.
+**Required reading for Thursday, May 17**
 
 -  Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung. `The Google File
    System <http://static.googleusercontent.com/media/research.google.com/en/us/archive/gfs-sosp2003.pdf>`__.
@@ -261,11 +261,11 @@ Note: Discussion will be led by our TA, Stephen Rosen, this day.
 Week 9 - Distributed Data II
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Monday, May 23**
+**Required reading for Tuesday, May 22**
 
 -  TBD
 
-**Required reading for Wednesday, May 25**
+**Required reading for Thursday, May 24**
 
 -  James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes,
    Christopher Frost, J. J. Furman, Sanjay Ghemawat, Andrey Gubarev,
@@ -282,9 +282,7 @@ Week 9 - Distributed Data II
 Week 10 - Review
 ~~~~~~~~~~~~~~~~
 
-*Note: There will be no class on May 30 (Memorial Day)*
-
-**Required reading for Wednesday, June 1**
+**Required reading for Tuesday, May 29**
 
 -  Edsger W. Dijkstra. `Self-stabilizing systems in spite of distributed
    control <http://courses.csail.mit.edu/6.852/05/papers/p643-Dijkstra.pdf>`__.
@@ -293,6 +291,8 @@ Week 10 - Review
    in
    Concurrency <http://research.microsoft.com/en-us/um/people/lamport/pubs/solved-and-unsolved.pdf>`__.
    SIGOPS Oper. Syst. Rev., 19(4):34–44, October 1985
+
+**No class on Thursday, May 31**
 
 
 .. _additional-reading:

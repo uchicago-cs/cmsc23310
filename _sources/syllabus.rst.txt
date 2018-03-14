@@ -11,7 +11,7 @@ Course organization
 
 This course is divided into three components:
 
-* **Reading and Discussion of Primary Sources**: Several papers will be assigned each week, to be discussed on both Monday and Wednesday.
+* **Reading and Discussion of Primary Sources**: Several papers will be assigned each week, to be discussed on both Tuesday and Thursday.
 * **Programming Assignments**: Three short programming assignments will be given throughout the quarter.
 * **Project and Paper**: Students will have to implement a distributed system drawing upon the seminal work covered in the class discussions. Based on their projects, students will have to write a final paper evaluating the features and performance of their project.
 
@@ -21,7 +21,7 @@ The discussion component is described in more detail below.
 Paper discussion
 ~~~~~~~~~~~~~~~~
 
-Every week, we will discuss several papers in class (see `Calendar and Reading List <calendar.html>`_ for the list of papers). The papers for a given week will have a common theme, but the papers will be split between the Monday and Wednesday classes. 
+Every week, we will discuss several papers in class (see `Calendar and Reading List <calendar.html>`_ for the list of papers). The papers for a given week will have a common theme, but the papers will be split between the Tuesday and Thursday classes. 
 
 At the beginning of the quarter, students will be divided into three groups: A, B, and C. Although the composition of the groups will remain fixed throughout the quarter, the *role* that each group will take during a discussion section will rotate every week. There are three roles:
 
