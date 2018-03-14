@@ -3,21 +3,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Programming Assignment 2: Paxos &#8212; CMSC 23310 - Advanced Distributed Systems</title>
 
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
@@ -33,8 +25,7 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-  </head>
-  <body>
+  </head><body>
 
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
@@ -86,7 +77,7 @@
     </div>
 </div>
 
-    <div class="col-md-12 content">
+    <div class="col-md-9 content">
       
   <div class="section" id="programming-assignment-2-paxos">
 <h1>Programming Assignment 2: Paxos<a class="headerlink" href="#programming-assignment-2-paxos" title="Permalink to this headline">¶</a></h1>
@@ -96,7 +87,7 @@
 <p>The full specification of the programming assignment is available on Kattis:</p>
 <blockquote>
 <div><a class="reference external" href="https://uchicago.kattis.com/problems/uchicago%3Apaxos">https://uchicago.kattis.com/problems/uchicago%3Apaxos</a></div></blockquote>
-<p>We also provide detailed descriptions of <code class="xref download docutils literal"><span class="pre">Sample</span> <span class="pre">Input</span> <span class="pre">1</span></code> and <code class="xref download docutils literal"><span class="pre">Sample</span> <span class="pre">Input</span> <span class="pre">2</span></code>.</p>
+<p>We also provide detailed descriptions of <code class="xref download docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Input</span> <span class="pre">1</span></code> and <code class="xref download docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Input</span> <span class="pre">2</span></code>.</p>
 <p>The points for this homework are divided as follows:</p>
 <ul class="simple">
 <li>35 points: Implementing the “Simulate” function.</li>
@@ -106,8 +97,8 @@
 <p>We recommend you follow the specification of the algorithm presented in <em>Paxos Made Simple</em>. Take into account that the bulk of the Paxos algorithm will be contained in your implementation of the “Deliver-Message” function. Our reference implementation is about 400 lines of Python, of which only 100 relate directly to the Paxos algorithm (the rest are the scaffolding to run the simulation).</p>
 <p>You are not provided with any starter code; you must implement your solution from scratch following the provided problem specification.</p>
 <p>For more instructions on how to use Kattis, please see our <a class="reference external" href="../kattis.html">Using Kattis</a> page.</p>
-<p>You will each be provided with an individual Git repository on the <a class="reference external" href="https://mit.cs.uchicago.edu">department’s GitLab server</a> to work on your programing assignments. Place your work for this programming assignment in a top-level <code class="docutils literal"><span class="pre">pa2</span></code> directory. Besides including your code in this directory, you must also include a <code class="docutils literal"><span class="pre">README</span></code> file with precise instructions on how to compile and run your code on a CS machine.</p>
-<p>You must submit your work using <a class="reference external" href="../chisubmit.html">chisubmit</a>. The assignment identifier you should use is <code class="docutils literal"><span class="pre">pa2</span></code>.</p>
+<p>You will each be provided with an individual Git repository on the <a class="reference external" href="https://mit.cs.uchicago.edu">department’s GitLab server</a> to work on your programing assignments. Place your work for this programming assignment in a top-level <code class="docutils literal notranslate"><span class="pre">pa2</span></code> directory. Besides including your code in this directory, you must also include a <code class="docutils literal notranslate"><span class="pre">README</span></code> file with precise instructions on how to compile and run your code on a CS machine.</p>
+<p>You must submit your work using <a class="reference external" href="../chisubmit.html">chisubmit</a>. The assignment identifier you should use is <code class="docutils literal notranslate"><span class="pre">pa2</span></code>.</p>
 </div>
 
 
@@ -123,7 +114,7 @@
     </p>
     <p>
         &copy; Copyright 2012-2018, The University of Chicago.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.1.<br/>
     </p>
   </div>
 </footer>
