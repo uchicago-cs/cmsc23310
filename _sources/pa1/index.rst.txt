@@ -7,7 +7,7 @@ In this programming assignment, you must implement the OM(m) algorithm described
 
 The full specification of the programming assignment is available on Kattis:
 
-    https://uchicago.kattis.com/problems/uchicago%3Abyzantine
+    https://uchicago.kattis.com/problems/uchicago.byzantine
 
 You are not provided with any starter code; you must implement your solution from scratch following the provided problem specification.
 

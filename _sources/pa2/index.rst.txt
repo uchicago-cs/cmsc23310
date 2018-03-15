@@ -9,7 +9,7 @@ You are allowed to use any programming language you want and, before the deadlin
 
 The full specification of the programming assignment is available on Kattis:
 
-    https://uchicago.kattis.com/problems/uchicago%3Apaxos
+    https://uchicago.kattis.com/problems/uchicago.paxos
 
 We also provide detailed descriptions of :download:`Sample Input 1 <paxos_sample1.pdf>` and :download:`Sample Input 2 <paxos_sample2.pdf>`.
 
