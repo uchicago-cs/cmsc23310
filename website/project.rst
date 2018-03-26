@@ -1,9 +1,9 @@
 Project
 =======
 
-**Due (Graduating Students):** Thursday, June 2nd @ 2pm
+**Due (Graduating Students):** Thursday, May 31st @ 2pm
 
-**Due (Non-Graduating Students):** Wednesday, June 8th @ 8pm
+**Due (Non-Graduating Students):** Wednesday, June 6th @ 8pm
 
 Distributed data storage is an important case study for many of the concepts explored in this course. The sharp rise of NoSQL databases in the late 2000's popularized data models, such as key-value stores, that departed from the traditional relational model. The development of these new models was usually motivated by the emerging field of large-scale distributed computing, and issues such as consistency and availability dominated the discussion of these models, with a bias towards sacrificing consistency for availability.
 

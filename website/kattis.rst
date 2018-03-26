@@ -29,7 +29,7 @@ Before you can submit code through Kattis, you need to complete the following st
 
 2. Log into the UChicago Kattis site using the account you just created: https://uchicago.kattis.com/login
 
-3. Go to the `CMSC 23310 Spring 2016 page on Kattis <https://uchicago.kattis.com/courses/CMSC23310/Spring-2016>`_, 
+3. Go to the `CMSC 23310 Spring 2018 page on Kattis <https://uchicago.kattis.com/courses/CMSC23310/Spring-2018>`_, 
    and click on the link that says "I am a student taking this course and I want to register for it on Kattis."
 
 4. Go to your User Settings (click on the user icon on the top-right corner of the Kattis
@@ -120,7 +120,7 @@ should just type (or copy-paste) some valid input (e.g., from the provided sampl
 and then press Control-D to indicate the end of input. Alternatively, you can save the 
 sample input to a file, and use input redirection to feed that file into the program's standard input::
 
-    pythong problem.py < sample.in
+    python problem.py < sample.in
 
 In either case, your program will run with the provided input. If the output matches the sample output provided
 in the Kattis problem statement, it means your solution works for that input. At this point, your solution
