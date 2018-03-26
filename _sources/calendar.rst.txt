@@ -279,7 +279,7 @@ Week 9 - Distributed Data II
    Design and Implementation, OSDI’12, pages 251–264, Berkeley, CA, USA,
    2012. USENIX Association
 
--  Eric Brewer, `Spanner, TrueTime & The CAP Theorem <https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45855.pdf>'__. Google, 2017
+-  Eric Brewer, `Spanner, TrueTime & The CAP Theorem <https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45855.pdf>`__. Google, 2017
 
 Week 10 - Review
 ~~~~~~~~~~~~~~~~
