@@ -23,6 +23,7 @@ and see how everything fits together.
   `A Note on Distributed Computing <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.7628&rep=rep1&type=pdf>`_. 
   Technical Report. Sun Microsystems, Inc., Mountain View, CA, USA.
 - `Fallacies of Distributed Computing Explained <https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf>`_. Arnon Rotem-Gal-Oz.
+- Pat Helland, `Standing on Distributed Shoulders of Giants <https://queue.acm.org/detail.cfm?id=2953944>`_. ACM Queue, 14(2), 2016
 
 Week 2 - Distributed Time
 ~~~~~~~~~~~~~~~~~~~~~~~~~
