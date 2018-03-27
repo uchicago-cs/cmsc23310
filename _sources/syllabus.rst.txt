@@ -12,7 +12,7 @@ Course organization
 This course is divided into three components:
 
 * **Reading and Discussion of Primary Sources**: Several papers will be assigned each week, to be discussed on both Tuesday and Thursday.
-* **Programming Assignments**: Three short programming assignments will be given throughout the quarter.
+* **Programming Assignments**: Two short programming assignments will be given throughout the quarter.
 * **Project and Paper**: Students will have to implement a distributed system drawing upon the seminal work covered in the class discussions. Based on their projects, students will have to write a final paper evaluating the features and performance of their project.
 
 The discussion component is described in more detail below.
@@ -43,7 +43,7 @@ Grading
 
 The final grade will be divided as follows: 
 
-* 25% programming assignments (broken down into 5%, 10%, 10%)
+* 25% programming assignments (broken down into 10%, 15%)
 
 * 35% participation in discussions, broken down into:
 
