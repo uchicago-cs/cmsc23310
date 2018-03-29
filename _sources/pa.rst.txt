@@ -5,4 +5,3 @@ Programming Assignments
   Due: Thursday, April 19th @ 8pm
 * **Programming Assignment 2**: `Paxos <pa2/>`_
   Due: Thursday, May 10th @ 8pm
-* **Programming Assignment 3**: TBD
