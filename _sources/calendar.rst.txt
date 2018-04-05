@@ -28,6 +28,8 @@ and see how everything fits together.
 Week 2 - Distributed Time
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+A: Questioners; B: Answerers; C: Observers.
+
 **Required reading for Tuesday, April 3**
 
 -  Leslie Lamport. `Time, Clocks, and the Ordering of Events in a
