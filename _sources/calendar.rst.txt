@@ -145,6 +145,11 @@ Team C: Questioners; Team A: Answerers; Team B: Observers.
    In Proceedings of the eighth annual ACM Symposium on Principles of
    distributed computing, PODC ’89, pages 1–28, New York, NY, USA, 1989.
    ACM
+-  Marcos K. Aguilera. `Stumbling over consensus research: Misunderstandings and issues
+   <https://pdfs.semanticscholar.org/bcbf/8095e24ab1574da8691f6aed1b461dcd0da6.pdf>`__.
+   In Replication. Lecture Notes in Computer Science, vol 5959. Springer, Berlin, Heidelberg, 2010.
+-  Marc's Blog: `Distributed Consensus: Beating Impossibility with Probability One <https://brooker.co.za/blog/2014/01/12/ben-or.html>`__.
+
    
 **Other suggested reading**
 
