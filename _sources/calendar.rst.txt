@@ -294,19 +294,7 @@ Week 9 - Distributed Data II
 
 **Required reading for Thursday, May 24**
 
--  James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes,
-   Christopher Frost, J. J. Furman, Sanjay Ghemawat, Andrey Gubarev,
-   Christopher Heiser, Peter Hochschild, Wilson Hsieh, Sebastian
-   Kanthak, Eugene Kogan, Hongyi Li, Alexander Lloyd, Sergey Melnik,
-   David Mwaura, David Nagle, Sean Quinlan, Rajesh Rao, Lindsay Rolig,
-   Yasushi Saito, Michal Szymaniak, Christopher Taylor, Ruth Wang, and
-   Dale Woodford. `Spanner: Google’s globally-distributed
-   database <http://static.googleusercontent.com/media/research.google.com/en/us/archive/spanner-osdi2012.pdf>`__.
-   In Proceedings of the 10th USENIX Conference on Operating Systems
-   Design and Implementation, OSDI’12, pages 251–264, Berkeley, CA, USA,
-   2012. USENIX Association
-
--  Eric Brewer, `Spanner, TrueTime & The CAP Theorem <https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45855.pdf>`__. Google, 2017
+- TBD
 
 Week 10 - Review
 ~~~~~~~~~~~~~~~~
