@@ -242,10 +242,6 @@ Week 8 - Distributed Data I
 
 **Required reading for Tuesday May 15**
 
-- TBD
-
-**Required reading for Thursday, May 17**
-
 -  Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung. `The Google File
    System <http://static.googleusercontent.com/media/research.google.com/en/us/archive/gfs-sosp2003.pdf>`__.
    SIGOPS Oper. Syst. Rev., 37(5):29–43, October 2003
@@ -260,6 +256,23 @@ Week 8 - Distributed Data I
    Proceedings of the 7th USENIX Symposium on Operating Systems Design
    and Implementation - Volume 7, OSDI ’06, pages 15–15, Berkeley, CA,
    USA, 2006. USENIX Association
+
+
+**Required reading for Thursday, May 17**
+
+-  James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes,
+   Christopher Frost, J. J. Furman, Sanjay Ghemawat, Andrey Gubarev,
+   Christopher Heiser, Peter Hochschild, Wilson Hsieh, Sebastian
+   Kanthak, Eugene Kogan, Hongyi Li, Alexander Lloyd, Sergey Melnik,
+   David Mwaura, David Nagle, Sean Quinlan, Rajesh Rao, Lindsay Rolig,
+   Yasushi Saito, Michal Szymaniak, Christopher Taylor, Ruth Wang, and
+   Dale Woodford. `Spanner: Google’s globally-distributed
+   database <http://static.googleusercontent.com/media/research.google.com/en/us/archive/spanner-osdi2012.pdf>`__.
+   In Proceedings of the 10th USENIX Conference on Operating Systems
+   Design and Implementation, OSDI’12, pages 251–264, Berkeley, CA, USA,
+   2012. USENIX Association
+
+-  Eric Brewer, `Spanner, TrueTime & The CAP Theorem <https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45855.pdf>`__. Google, 2017
 
 **Suggested papers**
 
