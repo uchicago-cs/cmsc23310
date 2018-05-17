@@ -285,16 +285,28 @@ Week 8 - Distributed Data I
    SIGOPS Oper. Syst. Rev., 44(2):35–40, April 2010
 
 
-Week 9 - Distributed Data II
+Week 9 - Games and Hot Topics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Required reading for Tuesday, May 22**
 
--  TBD
+- Ittai Abraham, Danny Dolev, Rica Gonen, Joseph Y. Halpern. 
+  `Distributed Computing Meets Game Theory: Robust Mechanisms for Rational Secret Sharing and Multiparty Computation <http://www.cs.huji.ac.il/~ittaia/papers/ADGH-PODC06.pdf>`__.
+  Principles of Distributed Computing, 2016.
+
+- Aaron D. Jaggard, Neil Lutz, Michael Schapira, Rebecca N. Wright.
+  `Dynamics at the Boundary of Game Theory and Distributed Computing <https://www.cs.rutgers.edu/~rwright1/Publications/teac17.pdf>`__.
+  ACM Transactions on Economics and Computation, 2017.
 
 **Required reading for Thursday, May 24**
 
-- TBD
+- Martin Abadi et al.
+  `TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems <https://arxiv.org/abs/1603.04467>`__.
+  ArXiv, 2016.
+
+- Satoshi Nakamoto.
+  `Bitcoin: A Peer-to-Peer Electronic Cash System <https://bitcoin.org/bitcoin.pdf>`__.
+  Published online, 2008 
 
 Week 10 - Review
 ~~~~~~~~~~~~~~~~
