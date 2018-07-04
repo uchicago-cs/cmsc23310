@@ -1,22 +1,17 @@
-CMSC 23310 - Advanced Distributed Systems
-=========================================
+CMSC 35200 -- Learning Systems
+==============================
 
 Course Staff
 ~~~~~~~~~~~~
 
-**Instructor**
+**Instructors**
 
-`Ian Foster <http://people.cs.uchicago.edu/~foster/>`_ (foster@uchicago.edu)
+`Ian Foster <http://people.cs.uchicago.edu/~foster/>`_ (foster@uchicago.edu) and `Rick Stevens <http://people.cs.uchicago.edu/~foster>`_ (stevens@uchicago.edu)
 
-*Office*: Searle 222
+*Office*: Crerar XXX and XXX
 
 *Office hours*: By appointment.
 
-**TA**
-
-Yuliana Zamora (yzamora@uchicago.edu)
-
-*Office hours*: Eckhart 129, 3:30-4:30 Tuesday and Thursday
 
 
 Course Description
@@ -32,7 +27,5 @@ For more details, please see the `syllabus <syllabus.html>`_.
 
    syllabus.rst
    calendar.rst
-   pa.rst
-   project.rst
 
 
