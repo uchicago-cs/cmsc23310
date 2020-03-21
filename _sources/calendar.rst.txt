@@ -1,6 +1,8 @@
 Spring 2020 Calendar and Reading List
 -------------------------------------
 
+**Note: This material is still a work in progress.**
+
 Make sure you don't miss the :ref:`additional-reading` at the bottom of this page.
 
 Week 1 - Introduction
@@ -30,14 +32,14 @@ Week 2 - Distributed Time
 
 Team A: Questioners; Team B: Answerers; Team C: Observers.
 
-**Required reading for Tuesday, April 7**
+**Required reading for Tuesday, April 14**
 
 -  Leslie Lamport. `Time, Clocks, and the Ordering of Events in a
    Distributed
    System <http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf>`__.
    Commun.ACM, 21(7):558–565, July 1978
 
-**Required reading for Thursday, April 9**
+**Required reading for Thursday, April 16**
 
 -  C. J. Fidge.\ `Timestamps in Message-Passing Systems that Preserve
    the Partial
@@ -65,14 +67,14 @@ Week 3 - Distributed Consensus I
 
 Team B: Questioners; Team C: Answerers; Team A: Observers.
 
-**Required reading for Tuesday, April 14**
+**Required reading for Tuesday, April 21**
 
 -  Leslie Lamport, Robert Shostak, and Marshall Pease. `The Byzantine
    Generals
    Problem <http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf>`__.
    ACM Trans. Program. Lang. Syst., 4(3):382–401, July 1982
 
-**Required reading for Thursday, April 16**
+**Required reading for Thursday, April 23**
    
 -  D. Skeen. `A Quorum-Based Commit Protocol <https://ecommons.cornell.edu/handle/1813/6323>`_. Technical Report 82-483. Department of
    Computer Science, Cornell University. February 1982.   
@@ -116,7 +118,7 @@ Week 4 - Limits of Distributed Systems
 
 Team C: Questioners; Team A: Answerers; Team B: Observers.
 
-**Required reading for Tuesday, April 21**
+**Required reading for Tuesday, April 28**
 
 -  Michael J. Fischer, Nancy A. Lynch, and Michael S. Paterson.
    `Impossibility of distributed consensus with one faulty
@@ -127,7 +129,7 @@ Team C: Questioners; Team A: Answerers; Team B: Observers.
    Consensus <http://groups.csail.mit.edu/tds/papers/Stockmeyer/DolevDS83-focs.pdf>`__.
    J. ACM, 34(1):77–97, January 1987
 
-**Required reading for Thursday, April 23**
+**Required reading for Thursday, April 30**
 
 -  Seth Gilbert and Nancy Lynch. `Brewer's Conjecture and the
    Feasibility of Consistent, Available, Partition-Tolerant Web
@@ -167,7 +169,7 @@ Week 5 - Paxos
 
 Team A: Questioners; Team B: Answerers; Team C: Observers.
 
-**Required reading for Tuesday, April 28 and Thursday April 30**
+**Required reading for Tuesday, May 5 and May 7**
 
 -  Leslie Lamport. `The Part-Time
    Parliament <http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf>`__.
@@ -184,7 +186,7 @@ Team A: Questioners; Team B: Answerers; Team C: Observers.
 Week 6 - Distributed Consensus II
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Tuesday, May 5**
+**Required reading for Tuesday, May 12**
 
 -  Mike Burrows. `The Chubby Lock Service for Loosely-Coupled
    Distributed
@@ -199,7 +201,7 @@ Week 6 - Distributed Consensus II
    of distributed computing, PODC ’07, pages 398–407, New York, NY, USA,
    2007. ACM
 
-**Required reading for Thursday, May 7**
+**Required reading for Thursday, May 14**
 
 -  Diego Ongaro and John Ousterhout. `In search of an understandable
    consensus algorithm <http://ramcloud.stanford.edu/raft.pdf>`__, 2014
@@ -211,7 +213,7 @@ Week 6 - Distributed Consensus II
 Week 7 - Distributed Hash Tables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Tuesday, May 12**
+**Required reading for Tuesday, May 19**
 
 -  Ion Stoica, Robert Morris, David Karger, M. Frans Kaashoek, and Hari
    Balakrishnan. `Chord: A scalable peer-to-peer lookup service for
@@ -226,7 +228,7 @@ Week 7 - Distributed Hash Tables
    Distributed Systems Platforms Heidelberg, Middleware ’01, pages
    329–350, London, UK, UK, 2001. Springer-Verlag
 
-**Required reading for Thursday, May 14**
+**Required reading for Thursday, May 21**
 
 -  Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan
    Kakulapati, Avinash Lakshman, Alex Pilchin, Swaminathan
@@ -240,7 +242,7 @@ Week 7 - Distributed Hash Tables
 Week 8 - Distributed Data I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Tuesday May 19**
+**Required reading for Tuesday May 26**
 
 -  Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung. `The Google File
    System <http://static.googleusercontent.com/media/research.google.com/en/us/archive/gfs-sosp2003.pdf>`__.
@@ -258,7 +260,7 @@ Week 8 - Distributed Data I
    USA, 2006. USENIX Association
 
 
-**Required reading for Thursday, May 21**
+**Required reading for Thursday, May 28**
 
 -  James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes,
    Christopher Frost, J. J. Furman, Sanjay Ghemawat, Andrey Gubarev,
@@ -285,31 +287,8 @@ Week 8 - Distributed Data I
    SIGOPS Oper. Syst. Rev., 44(2):35–40, April 2010
 
 
-Week 9 - Games and Hot Topics
+Week 9 - Review
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**Required reading for Tuesday, May 26**
-
-- Ittai Abraham, Danny Dolev, Rica Gonen, Joseph Y. Halpern. 
-  `Distributed Computing Meets Game Theory: Robust Mechanisms for Rational Secret Sharing and Multiparty Computation <http://www.cs.huji.ac.il/~ittaia/papers/ADGH-PODC06.pdf>`__.
-  Principles of Distributed Computing, 2016.
-
-- Aaron D. Jaggard, Neil Lutz, Michael Schapira, Rebecca N. Wright.
-  `Dynamics at the Boundary of Game Theory and Distributed Computing <https://www.cs.rutgers.edu/~rwright1/Publications/teac17.pdf>`__.
-  ACM Transactions on Economics and Computation, 2017.
-
-**Required reading for Thursday, May 28**
-
-- Martin Abadi et al.
-  `TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems <https://arxiv.org/abs/1603.04467>`__.
-  ArXiv, 2016.
-
-- Satoshi Nakamoto.
-  `Bitcoin: A Peer-to-Peer Electronic Cash System <https://bitcoin.org/bitcoin.pdf>`__.
-  Published online, 2008 
-
-Week 10 - Review
-~~~~~~~~~~~~~~~~
 
 **Required reading for Tuesday, June 2**
 
@@ -321,7 +300,7 @@ Week 10 - Review
    Concurrency <http://research.microsoft.com/en-us/um/people/lamport/pubs/solved-and-unsolved.pdf>`__.
    SIGOPS Oper. Syst. Rev., 19(4):34–44, October 1985
 
-**No class on Thursday, May 31**
+**No class on Thursday, June 4**
 
 
 .. _additional-reading:
