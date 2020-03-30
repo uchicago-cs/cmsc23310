@@ -120,10 +120,10 @@ ask the instructor.
 Asking questions
 ~~~~~~~~~~~~~~~~
 
-The preferred form of support for this course is through *Piazza*
-(http://www.piazza.com/), an on-line discussion service which can be
-used to ask questions and share useful information with your classmates.
-Students will be enrolled in Piazza at the start of the quarter.
+
+We will be using *Piazza* for class discussion. The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself. Rather than emailing questions to the teaching staff, I encourage you to post your questions on Piazza. 
+
+Find our class page at: https://piazza.com/uchicago/spring2020/cmsc23310/home
 
 All questions regarding assignments or material covered in class must be
 sent to Piazza, and not directly to the instructors or TAs, as this
