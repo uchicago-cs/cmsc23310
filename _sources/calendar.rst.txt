@@ -204,7 +204,7 @@ Week 6 - Distributed Consensus II
 **Required reading for Thursday, May 14**
 
 -  Diego Ongaro and John Ousterhout. `In search of an understandable
-   consensus algorithm <http://ramcloud.stanford.edu/raft.pdf>`__, 2014
+   consensus algorithm <https://raft.github.io/raft.pdf>`__, 2014
 
 **Other suggested reading**
 
