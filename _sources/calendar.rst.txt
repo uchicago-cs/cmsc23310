@@ -239,8 +239,8 @@ Week 7 - Distributed Hash Tables
    systems principles, SOSP ’07, pages 205–220, New York, NY, USA, 2007.
    ACM
 
-Week 8 - Distributed Data I
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Week 8 - Distributed Data
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Required reading for Tuesday May 26**
 
