@@ -1,7 +1,7 @@
 Programming Assignment 2: Paxos
 -------------------------------
 
-**Due:** Thursday, May 10th @ 8pm
+**Due:** Thursday, May 14th @ 8pm
 
 In this homework, you will be implementing a single-instance (or "Single Synod") version of the Paxos consensus algorithm. Instead of running the algorithm across multiple machines, you will instead simulate a distributed system composed of multiple machines connected with a basic (and deterministic) network.
 

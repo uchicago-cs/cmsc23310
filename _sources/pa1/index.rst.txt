@@ -1,7 +1,7 @@
 Programming Assignment 1: The Byzantine Generals Problem
 --------------------------------------------------------
 
-**Due:** Thursday, April 19th @ 8pm
+**Due:** Thursday, April 23rd @ 8pm
 
 In this programming assignment, you must implement the OM(m) algorithm described in *The Byzantine Generals Problem*. You are allowed to use any programming language you want and, before the deadline, you will be able to test your solution using `Kattis <https://open.kattis.com/>`_, a website that allows students to submit solutions to programming problems, and have them evaluated automatically by running a series of test cases on the submitted solutions. Please note that, while you are allowed to use any language, Kattis itself only supports a limited number of languages; if you do not use one of their supported languages, you will not be able to test your solution on Kattis (but you will still be able to submit your code for grading).
 
