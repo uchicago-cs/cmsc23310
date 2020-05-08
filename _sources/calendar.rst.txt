@@ -186,6 +186,8 @@ Team A: Questioners; Team B: Answerers; Team C: Observers.
 Week 6 - Distributed Consensus II
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Team B: Questioners; Team C: Answerers; Team A: Observers.
+
 **Required reading for Tuesday, May 12**
 
 -  Mike Burrows. `The Chubby Lock Service for Loosely-Coupled
@@ -212,6 +214,8 @@ Week 6 - Distributed Consensus II
 
 Week 7 - Distributed Hash Tables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Team C: Questioners; Team A: Answerers; Team B: Observers.
 
 **Required reading for Tuesday, May 19**
 
@@ -241,6 +245,8 @@ Week 7 - Distributed Hash Tables
 
 Week 8 - Distributed Data
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Team A: Questioners; Team B: Answerers; Team C: Observers.
 
 **Required reading for Tuesday May 26**
 
@@ -289,6 +295,8 @@ Week 8 - Distributed Data
 
 Week 9 - Review
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Team B: Questioners; Team C: Answerers; Team A: Observers.
 
 **Required reading for Tuesday, June 2**
 
