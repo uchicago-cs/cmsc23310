@@ -8,13 +8,11 @@ Course Staff
 
 `Ian Foster <http://people.cs.uchicago.edu/~foster/>`_ (foster@uchicago.edu)
 
-*Office*: Searle 222
-
 *Office hours*: By appointment.
 
 **TA**
 
-Yuliana Zamora (yzamora@uchicago.edu)
+Rose Pierce (rosepierce@uchicago.edu)
 
 *Office hours*: TBD
 

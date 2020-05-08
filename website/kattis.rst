@@ -29,7 +29,7 @@ Before you can submit code through Kattis, you need to complete the following st
 
 2. Log into the UChicago Kattis site using the account you just created: https://uchicago.kattis.com/login
 
-3. Go to the `CMSC 23310 Spring 2018 page on Kattis <https://uchicago.kattis.com/courses/CMSC23310/Spring-2018>`_, 
+3. Go to the `CMSC 23310 Spring 2020 page on Kattis <https://uchicago.kattis.com/courses/CMSC23310/Spring-2020>`_, 
    and click on the link that says "I am a student taking this course and I want to register for it on Kattis."
 
 4. Go to your User Settings (click on the user icon on the top-right corner of the Kattis

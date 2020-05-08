@@ -1,7 +1,7 @@
 Programming Assignment 2: Paxos
 -------------------------------
 
-**Due:** Thursday, May 12st @ 8pm
+**Due:** Thursday, May 14th @ 8pm
 
 In this homework, you will be implementing a single-instance (or "Single Synod") version of the Paxos consensus algorithm. Instead of running the algorithm across multiple machines, you will instead simulate a distributed system composed of multiple machines connected with a basic (and deterministic) network.
 
@@ -27,4 +27,4 @@ For more instructions on how to use Kattis, please see our `Using Kattis <../kat
 
 You will each be provided with an individual Git repository on the `department's GitLab server <https://mit.cs.uchicago.edu>`_ to work on your programing assignments. Place your work for this programming assignment in a top-level ``pa2`` directory. Besides including your code in this directory, you must also include a ``README`` file with precise instructions on how to compile and run your code on a CS machine.
 
-You must submit your work using `chisubmit <../chisubmit.html>`_. The assignment identifier you should use is ``pa2``.
+You must submit your work using `chisubmit <http://chi.cs.uchicago.edu/chisubmit/students.html>`_. The assignment identifier you should use is ``pa2``.

@@ -1,10 +1,12 @@
-Spring 2018 Calendar and Reading List
+Spring 2020 Calendar and Reading List
 -------------------------------------
+
+**Note: This material is still a work in progress.**
 
 Make sure you don't miss the :ref:`additional-reading` at the bottom of this page.
 
-Week 1
-~~~~~~
+Week 1 - Introduction
+~~~~~~~~~~~~~~~~~~~~~
 
 No required reading for this week. We will be covering basic terminology and
 concepts in distributed systems.
@@ -23,18 +25,21 @@ and see how everything fits together.
   `A Note on Distributed Computing <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.7628&rep=rep1&type=pdf>`_. 
   Technical Report. Sun Microsystems, Inc., Mountain View, CA, USA.
 - `Fallacies of Distributed Computing Explained <https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf>`_. Arnon Rotem-Gal-Oz.
+- Pat Helland, `Standing on Distributed Shoulders of Giants <https://queue.acm.org/detail.cfm?id=2953944>`_. ACM Queue, 14(2), 2016
 
 Week 2 - Distributed Time
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Tuesday, April 3**
+Team A: Questioners; Team B: Answerers; Team C: Observers.
+
+**Required reading for Tuesday, April 14**
 
 -  Leslie Lamport. `Time, Clocks, and the Ordering of Events in a
    Distributed
    System <http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf>`__.
    Commun.ACM, 21(7):558–565, July 1978
 
-**Required reading for Thursday, April 5**
+**Required reading for Thursday, April 16**
 
 -  C. J. Fidge.\ `Timestamps in Message-Passing Systems that Preserve
    the Partial
@@ -60,14 +65,16 @@ Week 2 - Distributed Time
 Week 3 - Distributed Consensus I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Tuesday, April 10**
+Team B: Questioners; Team C: Answerers; Team A: Observers.
+
+**Required reading for Tuesday, April 21**
 
 -  Leslie Lamport, Robert Shostak, and Marshall Pease. `The Byzantine
    Generals
    Problem <http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf>`__.
    ACM Trans. Program. Lang. Syst., 4(3):382–401, July 1982
 
-**Required reading for Thursday, April 12**
+**Required reading for Thursday, April 23**
    
 -  D. Skeen. `A Quorum-Based Commit Protocol <https://ecommons.cornell.edu/handle/1813/6323>`_. Technical Report 82-483. Department of
    Computer Science, Cornell University. February 1982.   
@@ -109,7 +116,9 @@ Week 3 - Distributed Consensus I
 Week 4 - Limits of Distributed Systems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Tuesday, April 17**
+Team C: Questioners; Team A: Answerers; Team B: Observers.
+
+**Required reading for Tuesday, April 28**
 
 -  Michael J. Fischer, Nancy A. Lynch, and Michael S. Paterson.
    `Impossibility of distributed consensus with one faulty
@@ -120,7 +129,7 @@ Week 4 - Limits of Distributed Systems
    Consensus <http://groups.csail.mit.edu/tds/papers/Stockmeyer/DolevDS83-focs.pdf>`__.
    J. ACM, 34(1):77–97, January 1987
 
-**Required reading for Thursday, April 19**
+**Required reading for Thursday, April 30**
 
 -  Seth Gilbert and Nancy Lynch. `Brewer's Conjecture and the
    Feasibility of Consistent, Available, Partition-Tolerant Web
@@ -138,6 +147,11 @@ Week 4 - Limits of Distributed Systems
    In Proceedings of the eighth annual ACM Symposium on Principles of
    distributed computing, PODC ’89, pages 1–28, New York, NY, USA, 1989.
    ACM
+-  Marcos K. Aguilera. `Stumbling over consensus research: Misunderstandings and issues
+   <https://pdfs.semanticscholar.org/bcbf/8095e24ab1574da8691f6aed1b461dcd0da6.pdf>`__.
+   In Replication. Lecture Notes in Computer Science, vol 5959. Springer, Berlin, Heidelberg, 2010.
+-  Marc's Blog: `Distributed Consensus: Beating Impossibility with Probability One <https://brooker.co.za/blog/2014/01/12/ben-or.html>`__.
+
    
 **Other suggested reading**
 
@@ -153,7 +167,9 @@ Week 4 - Limits of Distributed Systems
 Week 5 - Paxos
 ~~~~~~~~~~~~~~
 
-**Required reading for Tuesday, April 24 and Thursday April 26**
+Team A: Questioners; Team B: Answerers; Team C: Observers.
+
+**Required reading for Tuesday, May 5 and May 7**
 
 -  Leslie Lamport. `The Part-Time
    Parliament <http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf>`__.
@@ -170,7 +186,9 @@ Week 5 - Paxos
 Week 6 - Distributed Consensus II
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Tuesday, May 1**
+Team B: Questioners; Team C: Answerers; Team A: Observers.
+
+**Required reading for Tuesday, May 12**
 
 -  Mike Burrows. `The Chubby Lock Service for Loosely-Coupled
    Distributed
@@ -185,10 +203,10 @@ Week 6 - Distributed Consensus II
    of distributed computing, PODC ’07, pages 398–407, New York, NY, USA,
    2007. ACM
 
-**Required reading for Thursday, May 3**
+**Required reading for Thursday, May 14**
 
 -  Diego Ongaro and John Ousterhout. `In search of an understandable
-   consensus algorithm <http://ramcloud.stanford.edu/raft.pdf>`__, 2014
+   consensus algorithm <https://raft.github.io/raft.pdf>`__, 2014
 
 **Other suggested reading**
 
@@ -197,7 +215,9 @@ Week 6 - Distributed Consensus II
 Week 7 - Distributed Hash Tables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Tuesday, May 8**
+Team C: Questioners; Team A: Answerers; Team B: Observers.
+
+**Required reading for Tuesday, May 19**
 
 -  Ion Stoica, Robert Morris, David Karger, M. Frans Kaashoek, and Hari
    Balakrishnan. `Chord: A scalable peer-to-peer lookup service for
@@ -212,7 +232,7 @@ Week 7 - Distributed Hash Tables
    Distributed Systems Platforms Heidelberg, Middleware ’01, pages
    329–350, London, UK, UK, 2001. Springer-Verlag
 
-**Required reading for Thursday, May 10**
+**Required reading for Thursday, May 21**
 
 -  Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan
    Kakulapati, Avinash Lakshman, Alex Pilchin, Swaminathan
@@ -223,14 +243,12 @@ Week 7 - Distributed Hash Tables
    systems principles, SOSP ’07, pages 205–220, New York, NY, USA, 2007.
    ACM
 
-Week 8 - Distributed Data I
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Week 8 - Distributed Data
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Required reading for Tuesday May 15**
+Team A: Questioners; Team B: Answerers; Team C: Observers.
 
-- TBD
-
-**Required reading for Thursday, May 17**
+**Required reading for Tuesday May 26**
 
 -  Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung. `The Google File
    System <http://static.googleusercontent.com/media/research.google.com/en/us/archive/gfs-sosp2003.pdf>`__.
@@ -247,25 +265,8 @@ Week 8 - Distributed Data I
    and Implementation - Volume 7, OSDI ’06, pages 15–15, Berkeley, CA,
    USA, 2006. USENIX Association
 
-**Suggested papers**
 
--  Daniel Ford, Francois Labelle, Florentina Popovici, Murray Stokely, Van-Anh Truong, Luiz Barroso, Carrie Grimes, Sean Quinlan. 
-   `Availability in Globally Distributed Storage Systems <http://static.usenix.org/events/osdi10/tech/full_papers/Ford.pdf>`__.
-   Proceedings of the 9th USENIX Symposium on Operating Systems Design and Implementation, USENIX (2010)
--  Avinash Lakshman and Prashant Malik. `Cassandra: A Decentralized
-   Structured Storage
-   System <http://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf>`__.
-   SIGOPS Oper. Syst. Rev., 44(2):35–40, April 2010
-
-
-Week 9 - Distributed Data II
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**Required reading for Tuesday, May 22**
-
--  TBD
-
-**Required reading for Thursday, May 24**
+**Required reading for Thursday, May 28**
 
 -  James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes,
    Christopher Frost, J. J. Furman, Sanjay Ghemawat, Andrey Gubarev,
@@ -279,12 +280,25 @@ Week 9 - Distributed Data II
    Design and Implementation, OSDI’12, pages 251–264, Berkeley, CA, USA,
    2012. USENIX Association
 
--  Eric Brewer, `Spanner, TrueTime & The CAP Theorem <https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45855.pdf>'__. Google, 2017
+-  Eric Brewer, `Spanner, TrueTime & The CAP Theorem <https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45855.pdf>`__. Google, 2017
 
-Week 10 - Review
-~~~~~~~~~~~~~~~~
+**Suggested papers**
 
-**Required reading for Tuesday, May 29**
+-  Daniel Ford, Francois Labelle, Florentina Popovici, Murray Stokely, Van-Anh Truong, Luiz Barroso, Carrie Grimes, Sean Quinlan. 
+   `Availability in Globally Distributed Storage Systems <http://static.usenix.org/events/osdi10/tech/full_papers/Ford.pdf>`__.
+   Proceedings of the 9th USENIX Symposium on Operating Systems Design and Implementation, USENIX (2010)
+-  Avinash Lakshman and Prashant Malik. `Cassandra: A Decentralized
+   Structured Storage
+   System <http://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf>`__.
+   SIGOPS Oper. Syst. Rev., 44(2):35–40, April 2010
+
+
+Week 9 - Review
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Team B: Questioners; Team C: Answerers; Team A: Observers.
+
+**Required reading for Tuesday, June 2**
 
 -  Edsger W. Dijkstra. `Self-stabilizing systems in spite of distributed
    control <http://courses.csail.mit.edu/6.852/05/papers/p643-Dijkstra.pdf>`__.
@@ -294,7 +308,7 @@ Week 10 - Review
    Concurrency <http://research.microsoft.com/en-us/um/people/lamport/pubs/solved-and-unsolved.pdf>`__.
    SIGOPS Oper. Syst. Rev., 19(4):34–44, October 1985
 
-**No class on Thursday, May 31**
+**No class on Thursday, June 4**
 
 
 .. _additional-reading:
